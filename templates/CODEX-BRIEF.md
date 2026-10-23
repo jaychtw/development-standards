@@ -10,6 +10,22 @@
 
 Read the pinned UGDS and GDD **before implementation**. Treat both as binding. Do not paraphrase or rewrite the universal standard for this project. If a requirement conflicts, record it and request a decision; do not silently drop a requirement. Project-specific instructions may strengthen UGDS. Only the creative director can approve a scoped exception to a mandatory rule.
 
+## Mandatory UGDS preflight — blocking prerequisite
+
+**No verified UGDS, no implementation.** This applies to all assignments, including prototypes. Do not begin coding, asset production, or game implementation until the following checks succeed:
+
+1. Access the standards repository at https://github.com/jaychtw/game-development-standards (private; request authorization if needed).
+2. Retrieve **the exact pinned UGDS version and commit SHA** listed above. Never substitute the current `main` branch for a pinned release.
+3. Verify the retrieved document belongs to the pinned commit, and read **UGDS.md in full**, together with the project GDD and this brief.
+4. Identify material conflicts, missing requirements, and any proposed exceptions. Resolve blocking issues with the creative director before implementing affected work.
+5. Record preflight evidence in the delivery report: source URL, tag, resolved commit SHA, confirmation of full read, and conflict/exception status.
+
+**Access or verification failure:** Stop before implementation; report the exact problem, request authorization or an approved alternate means of obtaining the pinned document, then retry. Do not reconstruct UGDS from memory, earlier games, summaries, or assumptions. Do not use the GDD as a substitute. Permission to access the project repository does not necessarily grant access to the separate private standards repository.
+
+### Trackmaster pilot onboarding note (include only in its initial handoff)
+
+Trackmaster is the first game under a new two-document requirements workflow. Earlier games relied principally on their individual GDDs. For Trackmaster, both UGDS v1.0.0 (tag `v1.0.0`, commit `d5c6696efdd6efc028118600466db44aecae0c9b`) and its project GDD are binding. Explicitly acknowledge successful preflight before continuing. **Trackmaster must meet its own game-quality goals; it is not merely a process test.**
+
 ## Objective and boundaries
 - Deliver:
 - Explicitly out of scope:
@@ -54,6 +70,15 @@ Minor engineering details are delegated; no need to ask for approval at every im
 | Collaboration / changes | C01–C03 | Decisions, approvals, exceptions | Not Verified |
 
 Statuses: Pass / Fail / Not Applicable (reason) / Not Verified. Do not mark unperformed checks as passed.
+
+## Preflight verification record
+- UGDS repository and document URL:
+- Pinned tag / resolved commit SHA:
+- Full UGDS read: Confirmed / Blocked (explain)
+- GDD and brief read: Confirmed / Blocked (explain)
+- Conflicts / approved exceptions:
+- Preflight outcome: Passed / Blocked
+- Implementation started only after preflight: Yes / No (explain)
 
 ## Final delivery report
 - Built:
