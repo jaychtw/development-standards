@@ -8,6 +8,14 @@
 
 > This GDD describes the game-specific experience. Do not duplicate UGDS. Reference its requirement IDs when adding stricter rules or requesting an exception.
 
+## Governing standards and requirements
+
+This project adopts the **Universal Game Development Standard (UGDS) [version]**, maintained at https://github.com/jaychtw/game-development-standards and pinned to **[immutable tag and commit SHA]**. The GDD defines this game's creative direction, mechanics, content, and project-specific requirements; UGDS governs reusable development, localization, accessibility, visual-production, quality-assurance, and delivery requirements.
+
+**For matters not specified or fully detailed in this GDD, the applicable UGDS requirements shall govern.** Applicable laws, regulations, platform policies, and safety requirements also apply and take precedence where required. The GDD may add more specific or stricter requirements, but cannot silently waive mandatory UGDS requirements.
+
+If a GDD requirement appears to conflict with UGDS, **pause implementation of the affected matter**, document the conflict, and obtain the creative director's decision and any expressly approved exception. Neither omission, ambiguity, nor inability to access UGDS constitutes permission to disregard it. **Codex must verify access to and read the pinned UGDS before any implementation begins.**
+
 ## 1. One-sentence pitch
 [What the player does, and why it is interesting.]
 
