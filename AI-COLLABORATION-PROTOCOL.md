@@ -1,6 +1,6 @@
 # AI Collaboration & Continuity Protocol (AICP)
 
-**Version:** 1.0.0  
+**Version:** 1.0.1  
 **Status:** Adopted collaboration baseline  
 **Applies to:** AI-assisted game and application development adopting this protocol  
 **Owner:** Human product owner / creative director  
@@ -37,11 +37,12 @@ Pin the UGDS version by tag or commit SHA as UGDS requires. Pin this protocol by
 ## 4. Context reconstruction on conversation startup
 
 For an existing project:
-1. Identify the project repository and review its README, `PROJECT_STATE.md` if present, current GDD, decision records, standards pins, key verification reports and relevant changes.
-2. Review this protocol, the applicable UGDS and available project templates.
-3. Recover relevant ChatGPT Project conversations when accessible; explicitly distinguish confirmed history from partial memories and inference.
-4. Summarize verified phase/status, frozen decisions, known risks and next open question briefly; then follow the owner's instruction.
-5. If GitHub or past conversations are inaccessible, declare that limitation. Do not invent missing content or needlessly demand a full recap.
+1. Discover the relevant repository under the owner's GitHub namespace, **https://github.com/jaychtw**, when the precise repository is not supplied. Prefer the connected GitHub integration to enumerate accessible repositories, including authorized private repositories. Do not assume all repositories are accessible to every agent. Check identity using project name, README and repository metadata; do not pick an ambiguous match without verification.
+2. Once identified, prioritize its **current approved GDD** and associated design decisions as the record of intended experience, then inspect its README, `PROJECT_STATE.md` if present, current GDD, decision records, standards pins, key verification reports and relevant changes.
+3. Review this protocol, the applicable UGDS and available project templates.
+4. Recover relevant ChatGPT Project conversations when accessible; explicitly distinguish confirmed history from partial memories and inference.
+5. Summarize verified phase/status, frozen decisions, known risks and next open question briefly; then follow the owner's instruction.
+6. If GitHub or past conversations are inaccessible, declare that limitation. Do not invent missing content or needlessly demand a full recap.
 
 For a new project, establish the scope and governing standards without prematurely restricting exploration. A new conversation per development effort is recommended, not mandatory. If a conversation reaches context limits, use a documented handoff.
 

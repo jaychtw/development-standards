@@ -2,6 +2,16 @@
 
 All notable changes to the Universal Game Development Standard (UGDS) are recorded here. Use semantic versions and pin a release tag or commit SHA in each game project.
 
+## [AICP 1.0.1] - 2026-10-29
+
+### Clarified
+- Explicitly identify https://github.com/jaychtw as the default discovery namespace for the owner's projects.
+- Prioritize approved GDDs and design decision records when reconstructing intended product behavior.
+- Require agents to verify access and disambiguate repositories rather than assuming universal visibility.
+
+### Notes
+- UGDS 1.0.0 and individual project acceptance criteria remain unchanged.
+
 ## [AICP 1.0.0] - 2026-10-29
 
 ### Added

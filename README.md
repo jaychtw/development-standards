@@ -5,7 +5,7 @@ Central, versioned guidance for AI-assisted games and application projects.
 ## Governing documents
 
 - [UGDS v1.0.0](UGDS.md) — adopted **game development quality** baseline. Pin the precise UGDS tag or commit in each adopting project; existing projects are not retroactively certified.
-- [AI Collaboration & Continuity Protocol (AICP) v1.0.0](AI-COLLABORATION-PROTOCOL.md) — shared AI/human collaboration, memory recovery, decisions, evidence, handoffs and approval boundaries. Applies to games and apps that adopt it.
+- [AI Collaboration & Continuity Protocol (AICP) v1.0.1](AI-COLLABORATION-PROTOCOL.md) — shared AI/human collaboration, memory recovery, decisions, evidence, handoffs and approval boundaries. Applies to games and apps that adopt it.
 
 ## Templates
 
