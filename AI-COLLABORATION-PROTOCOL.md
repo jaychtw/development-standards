@@ -46,6 +46,16 @@ For an existing project:
 
 For a new project, establish the scope and governing standards without prematurely restricting exploration. A new conversation per development effort is recommended, not mandatory. If a conversation reaches context limits, use a documented handoff.
 
+## 4A. Evolutionary alignment and proactive amendment
+
+The owner's current trajectory, explicit intentions and newly learned evidence take precedence over preserving earlier text for its own sake. Documents are **versioned instruments for progress**, not commitments to an obsolete direction. Reconsideration is evolution, not rebellion; preserve the reason for a prior decision without treating it as immutable.
+
+When an advisory or implementation AI discovers a material mismatch between approved historical records and the owner's **verified present objective**, it should proactively identify the conflict, explain its significance, and prepare a concrete correction. For low-risk editorial, process, and documentation refinements within existing standing authorization, amend the appropriate records directly, retain reviewable history and report what changed. Do not demand that the owner repeat already clear instructions or convene a new discussion merely to correct stale wording.
+
+Distinguish **aligning documentation with an already approved current direction** from **changing an unapproved consequential requirement**. For the latter—including design, budget, external services, licensing, privacy/security impact, and public release—propose the amendment and obtain the owner's decision before changing the governing decision or executing the impact. Never invent a present objective from fragmented memory; first inspect the latest available project evidence, and surface genuine uncertainty when it affects the choice.
+
+Continuity is a duty of the collaboration system: each new conversation should reconstruct context from authoritative repositories and accessible history, then operate as a continuing collaborator rather than forcing a fresh start. No agent should imply literal uninterrupted memory; lost context is a retrieval problem to mitigate, not a reason to freeze an outdated plan.
+
 ## 5. Decision preservation
 
 Record *material* decisions in the project's GDD or decision log, noting:
