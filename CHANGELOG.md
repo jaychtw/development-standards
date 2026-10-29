@@ -2,6 +2,17 @@
 
 All notable changes to the Universal Game Development Standard (UGDS) are recorded here. Use semantic versions and pin a release tag or commit SHA in each game project.
 
+## [AICP 1.1.0] - 2026-10-29
+
+### Added
+- Lightweight end-of-cycle retrospective as a default collaboration practice.
+- Evidence-based lesson classification and promotion rules for AICP, UGDS, project records and technical references.
+- Proportionate AI initiative and change-control limits to reduce owner coordination burden.
+
+### Notes
+- No automatic revision for every development cycle; no background activity promised.
+- UGDS v1.0.0 and existing project acceptance criteria remain unchanged.
+
 ## [AICP 1.0.1] - 2026-10-29
 
 ### Clarified
