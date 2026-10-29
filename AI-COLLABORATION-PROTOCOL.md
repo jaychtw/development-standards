@@ -1,6 +1,6 @@
 # AI Collaboration & Continuity Protocol (AICP)
 
-**Version:** 1.0.1  
+**Version:** 1.1.0  
 **Status:** Adopted collaboration baseline  
 **Applies to:** AI-assisted game and application development adopting this protocol  
 **Owner:** Human product owner / creative director  
@@ -77,5 +77,24 @@ Agents must not claim they persist independent memory across sessions. The recov
 ## 8. Maintenance and amendment
 
 Reusable process lessons belong here, with a version change and changelog entry. Product-specific decisions belong in their individual repositories. Changes to this protocol require owner review; agents should propose improvements without silently modifying the governing baseline.
+
+## 9. Continuous improvement at cycle closure
+
+At a meaningful milestone, finished prototype, abandoned experiment, project pause, or conversation handoff, the advisory AI should **proactively offer or conduct a proportionate retrospective**, using available GDDs, change history, implementation reports and conversation context. The owner should not have to restate established practices or request the review by a special phrase. Do not interrupt active exploration with procedural ceremony.
+
+Examine, as relevant, design fidelity, implementation friction, AI collaboration, quality/evidence gaps and transferability. Separate observed evidence from speculation. Record only consequential lessons and avoid repeating the entire project history.
+
+**Route each lesson by scope:**
+- Project-specific design and decisions → project GDD, decision record or `PROJECT_STATE.md`.
+- Reusable product-quality or QA requirement → propose a UGDS improvement.
+- Reusable AI collaboration, prompting, handoff or decision procedure → propose an AICP improvement.
+- Technical repeatable solution → suitable technical template or reference, not automatically AICP.
+- Unvalidated hypothesis → a candidate for future evaluation, not a mandatory standard.
+
+**Promotion threshold:** Adopt a universal practice when it addresses a recurring problem, mitigates material risk or has compelling cross-project benefits. Clearly identify the evidence, impact, tradeoffs and applicable scope. Avoid bloating standards with one-off anecdotes, duplicative instructions or speculative requirements. Prefer clarification, simplification or retirement of obsolete rules when warranted.
+
+For low-risk refinements within the owner's standing authorization, an agent may prepare and commit a narrowly scoped, versioned improvement; preserve a reviewable change history and report what changed. Seek explicit approval for substantial new obligations, quality gates, costs, privacy/security changes, or changes affecting adopted project acceptance criteria. Never silently change the pinned standards of existing projects.
+
+Keep the **closing routine lightweight**: (1) summarize consequential lessons, (2) classify their destination, (3) update only justified records, (4) note any unresolved question for the next project. If no transferable lesson emerges, say so and make no standards change. This is an event-triggered practice, not autonomous background monitoring or a promise of persistent internal AI memory.
 
 **Governing maxim:** Standardize continuity without standardizing creativity.
