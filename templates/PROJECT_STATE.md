@@ -8,7 +8,8 @@
 - **Snapshot commit:** [SHA or UNVERIFIED]
 - **Current phase:** [exploration / design / implementation / QA / staging / released]
 - **Owner acceptance:** [pending / approved with reference]
-- **Deployment:** [not authorized / privately staged / publicly approved, with evidence]
+- **Project deployment:** [not authorized / staged / publicly deployed-and-verified / blocked, with evidence]
+- **Possibility publication:** [not started / deferred / pending approval / deployed-and-verified / blocked, with entry URL, portal commit and deployment evidence or explicit unknown]
 - **Standards:** UGDS [version + exact tag/SHA, if adopted]; AICP [version + tag/SHA]
 
 ## One-paragraph intent
