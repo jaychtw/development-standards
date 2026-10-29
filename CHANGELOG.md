@@ -2,6 +2,16 @@
 
 All notable changes to the Universal Game Development Standard (UGDS) are recorded here. Use semantic versions and pin a release tag or commit SHA in each game project.
 
+## [AICP 1.0.0] - 2026-10-29
+
+### Added
+- AI Collaboration & Continuity Protocol for context reconstruction, decision preservation, approval gates and agent handoffs.
+- Project state and conversation-starter templates, plus a central README.
+
+### Notes
+- AICP is independently versioned; UGDS remains unchanged at 1.0.0.
+- No retroactive adoption or game acceptance changes.
+
 ## [1.0.0] - 2026-10-23
 
 ### Added
