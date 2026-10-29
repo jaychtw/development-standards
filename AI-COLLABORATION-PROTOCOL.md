@@ -1,6 +1,6 @@
 # AI Collaboration & Continuity Protocol (AICP)
 
-**Version:** 1.1.0  
+**Version:** 1.1.1  
 **Status:** Adopted collaboration baseline  
 **Applies to:** AI-assisted game and application development adopting this protocol  
 **Owner:** Human product owner / creative director  
@@ -96,5 +96,23 @@ Examine, as relevant, design fidelity, implementation friction, AI collaboration
 For low-risk refinements within the owner's standing authorization, an agent may prepare and commit a narrowly scoped, versioned improvement; preserve a reviewable change history and report what changed. Seek explicit approval for substantial new obligations, quality gates, costs, privacy/security changes, or changes affecting adopted project acceptance criteria. Never silently change the pinned standards of existing projects.
 
 Keep the **closing routine lightweight**: (1) summarize consequential lessons, (2) classify their destination, (3) update only justified records, (4) note any unresolved question for the next project. If no transferable lesson emerges, say so and make no standards change. This is an event-triggered practice, not autonomous background monitoring or a promise of persistent internal AI memory.
+
+## 10. Possibility portfolio publication at project lifecycle closure
+
+**Conversation ownership:** The conversation dedicated to a game/app owns its end-of-cycle release evidence and the request to add/update that work in **Possibility** (`jaychtw/jaychtw.github.io`). The Possibility-focused conversation owns shared portal design, navigation, localization, governance and architecture. Routine catalog entries should not require moving conversations. AICP owns reusable cross-project procedure; UGDS does not acquire a portfolio-publication requirement.
+
+**Distinct release gates:** A project being deployed and a Possibility entry being published are separate events and separate repositories. Verify public project deployment before preparing a live card. Neither the project release nor a successful portal CI run automatically authorizes a portal deployment. Follow the **current verified** approval and deployment policy in each repository. Never infer authorization from an old chat, outdated documentation, a test pass or the presence of a publishing workflow. If the owner's explicit authorization covers both releases and the current workflow permits it, execute within that authorization; otherwise request approval at the applicable gate.
+
+**Routine closing sequence (proportionate, no automatic background work):**
+1. Verify the independent release's canonical playable/open URL, representative functioning, source repository, release evidence and known limitations. Label unresolved checks honestly.
+2. Consult the current Possibility repository's `docs/CATALOG.md`, `docs/MAINTENANCE.md`, release instructions and real metadata schema before editing. Existing portal conventions govern the entry; AICP does not freeze a particular JSON schema or prescribe a new UI.
+3. Create/update one stable project entry in the correct collection without duplicating a card; use accurate English/Traditional Chinese copy according to the **current** portal localization contract, approved names, descriptions and tags. Never invent translations, release dates, approval records or maturity claims.
+4. Verify the destination link and record actual link evidence as required by the portal contract. Use only owner-approved cover artwork, preserve its title lettering and provenance, and use documented screenshot/neutral fallback if no cover is approved. Never generate artwork or change unrelated cards as a side effect.
+5. Make a narrow, reviewable portal change, run relevant build, link, browser, accessibility and language checks, and publish only under the portal's verified release authority. Verify the actual public Possibility entry after deployment. A project repository deployment cannot substitute for this verification.
+6. Update the project `PROJECT_STATE.md` or release record with **two independent statuses**: project deployment and Possibility publication (not started / pending approval / deployed-and-verified / blocked), including live URLs and exact commit/deployment references when known. Record a concise handoff and perform the §9 retrospective.
+
+**Scope boundaries:** A routine portal entry must not alter shared design, global translations, filters, governance, legal policies, unrelated assets, other games, or repository licensing. Route any new platform-wide decision to the Possibility workstream. The frozen Possibility v1.2 change request remains a separate, not-yet-executed platform initiative until independently implemented and verified; do not treat it as a currently deployed requirement. Preserve no-expenditure constraints unless the owner expressly changes them.
+
+**Exceptions:** If a game/app is released but not meant for public showcase, mark Possibility publication as deferred rather than manufacturing a card. If the portal is inaccessible, publication is blocked or not verified; produce a concise handoff for later execution instead of claiming completion.
 
 **Governing maxim:** Standardize continuity without standardizing creativity.
