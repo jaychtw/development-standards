@@ -5,7 +5,7 @@ Central, versioned guidance for AI-assisted games and application projects.
 ## Governing documents
 
 - [UGDS v1.0.0](UGDS.md) — adopted **game development quality** baseline. Pin the precise UGDS tag or commit in each adopting project; existing projects are not retroactively certified.
-- [AI Collaboration & Continuity Protocol (AICP) v1.1.0](AI-COLLABORATION-PROTOCOL.md) — shared AI/human collaboration, memory recovery, decisions, evidence, handoffs and approval boundaries. Applies to games and apps that adopt it.
+- [AI Collaboration & Continuity Protocol (AICP) v1.1.1](AI-COLLABORATION-PROTOCOL.md) — shared AI/human collaboration, memory recovery, decisions, evidence, handoffs and approval boundaries. Applies to games and apps that adopt it.
 
 ## Templates
 
@@ -13,6 +13,10 @@ Central, versioned guidance for AI-assisted games and application projects.
 - [Codex brief](templates/CODEX-BRIEF.md) — bounded implementation assignment.
 - [Project state](templates/PROJECT_STATE.md) — lightweight current-state index in each project's repo.
 - [Conversation starter](templates/CONVERSATION-STARTER.md) — reusable opening message for a new ChatGPT Game Development conversation.
+
+## Routine Possibility publication
+
+At project closure, the **individual game/app conversation** coordinates its Possibility catalog handoff after an independently verified release; the Possibility workstream handles shared platform changes. Publication remains a distinct, authorization-gated step. See [AICP §10](AI-COLLABORATION-PROTOCOL.md) and the portal's [catalog contract](https://github.com/jaychtw/jaychtw.github.io/blob/main/docs/CATALOG.md).
 
 ## Continuous improvement
 
