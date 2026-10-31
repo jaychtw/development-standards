@@ -1,6 +1,6 @@
 # AI Collaboration & Continuity Protocol (AICP)
 
-**Version:** 1.2.0  
+**Version:** 1.2.1  
 **Status:** Adopted collaboration baseline  
 **Applies to:** AI-assisted game and application development adopting this protocol  
 **Owner:** Human product owner / creative director  
@@ -81,6 +81,18 @@ Use the Commitment Cycle as a **proportionate collaboration framework**, not fou
 **Evidence-gated feasibility (risk-based):** Use a bounded technical spike/POC when there is material uncertainty about visual quality, technical capability, cost, performance, integrations or production scalability. Specify the question, time/scope boundary, demonstrable artifact, objective checks, human review criteria and stopping point. Record limitations and whether evidence was actually inspected. Avoid speculative process overhead on familiar low-risk changes.
 
 **Continuity:** Record consequential offers, counteroffers, owner commitment/acceptance decisions, accepted baselines and outstanding follow-ups in the project's GDD/decision log and `PROJECT_STATE.md`. Distinguish a *milestone accepted for continued development* from *final production acceptance* and from *permission to merge, publish or deploy*. Preserve project-specific evidence in its own repository, not in the shared standards.
+
+### 6.2 Durable development checkpoints
+
+**Development synchronization is not release authorization.** Codex should use a dedicated working branch as the durable Git-backed record for authorized implementation. A working cloud environment or accessible preview link is not a durable backup.
+
+1. **Start:** Read applicable repository instructions and the adopted AICP; inspect branch state, local modifications, CI/deployment triggers, cost implications and branch protections. Use a designated working branch rather than `main` unless explicitly authorized otherwise.
+2. **During work:** Commit and safely push meaningful intermediate checkpoints, especially before long-running or asset-heavy operations. Preserve reproducible editable sources and useful review evidence without indiscriminately committing large generated files.
+3. **Before reporting completion:** Run relevant checks, inspect staged changes for secrets and unintended files, check remote divergence, commit and push the final checkpoint, verify the remote commit SHA, and return stable GitHub links and honest test results. Incomplete work may be preserved as clearly labeled WIP, never misrepresented as accepted.
+4. **Exceptions:** Do not push when it could trigger unapproved deployment, publication, costs, secret exposure, destructive conflicts or a project-specific prohibition. Do not force-push or silently change workflow/settings. Report the specific blocker and provide an independently durable backup where feasible; a backup only in the same transient workspace is not independent preservation.
+5. **Authority:** Safe development-branch checkpoint pushes are routine and preauthorized for implementation work unless the owner specifies local-only work or repository policy prohibits them. Push does not mean owner acceptance, merge, release or deployment; those remain separate gates.
+
+**First-instruction reinforcement:** At each new project, the initial Codex implementation brief must both direct Codex to read the adopted AICP and explicitly state the working-branch, intermediate-checkpoint and final-push requirement. This short reminder complements the governing protocol.
 
 ## 7. Handoff, drift and confidentiality
 

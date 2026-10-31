@@ -3,12 +3,13 @@
 **Project repository:** [owner/repo]  
 **GDD:** [path + pinned version/commit]  
 **Universal standard:** [UGDS vX.Y.Z + immutable tag/commit SHA]  
+**Collaboration protocol:** [adopted AICP version and link/commit]  
 **Assignment:** [POC / full build / revision / release]  
 **Authorized branch / deployment target:** [details]
 
 ## Governing instructions
 
-Read the pinned UGDS and GDD **before implementation**. Treat both as binding. Do not paraphrase or rewrite the universal standard for this project. If a requirement conflicts, record it and request a decision; do not silently drop a requirement. Project-specific instructions may strengthen UGDS. Only the creative director can approve a scoped exception to a mandatory rule.
+Read the pinned UGDS, adopted AICP, and GDD **before implementation**. Treat both as binding. Do not paraphrase or rewrite the universal standard for this project. If a requirement conflicts, record it and request a decision; do not silently drop a requirement. Project-specific instructions may strengthen UGDS. Only the creative director can approve a scoped exception to a mandatory rule.
 
 ## Mandatory UGDS preflight — blocking prerequisite
 
@@ -40,6 +41,10 @@ Trackmaster is the first game under a new two-document requirements workflow. Ea
 - Fixed game-design decisions:
 - Engineering choices delegated to Codex:
 - Known dependencies and risks:
+
+## Git checkpoint delivery
+
+Read adopted AICP §6.2. Use a dedicated working branch, check CI/deployment and secret risks, and safely push intermediate and final checkpoints before reporting completion. Provide verified GitHub links. Do not force-push, merge or deploy without approval. If unsafe, report the blocker and independent backup status.
 
 ## Required workflow
 
