@@ -1,6 +1,6 @@
 # AI Collaboration & Continuity Protocol (AICP)
 
-**Version:** 1.2.1  
+**Version:** 1.2.2  
 **Status:** Adopted collaboration baseline  
 **Applies to:** AI-assisted game and application development adopting this protocol  
 **Owner:** Human product owner / creative director  
@@ -93,6 +93,17 @@ Use the Commitment Cycle as a **proportionate collaboration framework**, not fou
 5. **Authority:** Safe development-branch checkpoint pushes are routine and preauthorized for implementation work unless the owner specifies local-only work or repository policy prohibits them. Push does not mean owner acceptance, merge, release or deployment; those remain separate gates.
 
 **First-instruction reinforcement:** At each new project, the initial Codex implementation brief must both direct Codex to read the adopted AICP and explicitly state the working-branch, intermediate-checkpoint and final-push requirement. This short reminder complements the governing protocol.
+
+### 6.3 Artifact-first handoff and custody
+
+When a collaborator creates an approved or reviewable implementation artifact (for example a visual keyframe, vector source, diagram, test fixture or specification), **the creating collaborator owns its repository handoff** when authorized access and safe writes are available. The human owner approves direction and may relay a short instruction; the owner should not have to manually download, upload or retransmit the artifact between AI agents.
+
+1. **Author and identify:** Create the actual usable artifact, not only a prose prompt or reference link. Distinguish the owner-approved original from a generated approximation, traced vector, or unapproved candidate; never claim an interpretation was itself accepted.
+2. **Preserve and link:** Verify repository, visibility, branch and deployment/cost/secret risks. Commit source and necessary provenance to the designated development branch, following §6.2. Return exact durable paths and commit SHA to the owner and implementation agent. Avoid large binaries when an appropriate versioned source is sufficient, but preserve an approved original when technically and legally feasible.
+3. **Delegate from the artifact:** Instruct the implementation agent to retrieve and inspect the committed artifact and its acceptance status, then implement against it. Verify fidelity against the approved source and return visual evidence for human review; passing automated asset checks does not constitute aesthetic acceptance.
+4. **Exceptions:** If access, safety, licensing or tool limitations prevent a direct commit, state the blocker and use the smallest safe alternative handoff. Never silently treat a description or approximate reconstruction as the actual approved asset.
+
+This is an **artifact custody default**, not an additional release gate or a requirement to create art for every coding task. Human approval, existing scope limits and separate release authorization remain unchanged.
 
 ## 7. Handoff, drift and confidentiality
 
