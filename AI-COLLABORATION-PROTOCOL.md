@@ -1,10 +1,10 @@
 # AI Collaboration & Continuity Protocol (AICP)
 
-**Version:** 1.1.1  
+**Version:** 1.2.0  
 **Status:** Adopted collaboration baseline  
 **Applies to:** AI-assisted game and application development adopting this protocol  
 **Owner:** Human product owner / creative director  
-**Date:** 2026-10-29
+**Date:** 2026-10-31
 
 ## 1. Purpose and boundaries
 
@@ -18,7 +18,7 @@ No AI may claim complete historical recall, successful document retrieval, or ow
 
 - **Human owner:** vision, design direction, constraints, scope, budgets, acceptance, release and exceptions.
 - **ChatGPT / advisory AI:** challenge assumptions, surface tradeoffs and blind spots, maintain decision clarity, create actionable briefs and review evidence.
-- **Codex / implementation AI:** implement within approved boundaries, test, document and report deviations and limitations.
+- **Codex / implementation AI:** assess feasibility and counterpropose during Offer; implement within approved boundaries after commitment, test, document and report deviations and limitations.
 - **GitHub:** versioned source of truth for project specifications, decisions, implementation and evidence.
 
 AI agents must not reinterpret delivery as approval. Material scope or gameplay changes, visual direction, costs, external services, deployment, security/privacy impacts or standards exceptions require owner approval. Routine implementation details need not interrupt work.
@@ -60,11 +60,27 @@ Update `PROJECT_STATE.md` at meaningful milestones or after decisions that chang
 
 ## 6. Work and quality gates
 
-Distinguish **exploration → proposed design → owner-approved scope → Codex implementation → verified tests → owner acceptance → deployment approval**. Never collapse these gates. Passing automated tests is not proof of visual quality, user experience or public readiness.
+Distinguish **Explore → Offer → explicit commitment gate → Execute → Confirm & Close → separate deployment approval**, as detailed in §6.1. Never collapse these gates. Passing automated tests is not proof of visual quality, user experience or public readiness.
 
 Implementation briefs must contain objective, constraints, authoritative sources, in/out of scope, acceptance tests, evidence requirements, escalation thresholds and stopping conditions. Codex may choose low-impact technical approaches; report design-affecting deviations before implementing them.
 
 On completion, review changes and evidence independently where practical. Label tests as reported, independently reproduced, not verified or failed. Release requires separate authorization.
+
+### 6.1 Commitment Cycle: Explore → Offer → Execute → Confirm & Close
+
+Use the Commitment Cycle as a **proportionate collaboration framework**, not four mandatory ceremonies for every trivial change. The human owner retains creative, budget, acceptance and release authority throughout.
+
+1. **Explore — discover intent.** The owner and advisory AI brainstorm, challenge assumptions, compare alternatives and converge toward a candidate GDD or change proposal. Mark uncertainties, risks and unresolved decisions. A draft GDD is not yet an implementation authorization.
+2. **Offer — establish a feasible commitment.** Invite Codex to inspect the actual repository, pinned standards, tools and constraints *before committing to uncertain implementation*. Codex assesses feasibility, exposes gaps, estimates tradeoffs, proposes alternatives or a bounded technical spike, and states what evidence can be delivered. The advisory AI and owner evaluate the offer and any counteroffers. For routine, well-understood work, this can be a short preflight rather than a separate experiment.
+3. **Commitment gate — authorize execution.** Before substantive execution, establish an agreed outcome, scope and exclusions, constraints (including cost and release), decision ownership, acceptance criteria, evidence, and stop/escalation conditions. Owner approval of material changes is required; Codex may decide routine engineering details. A feasibility report or POC does not authorize expanded scope.
+4. **Execute — deliver the agreement.** Codex implements the agreed work, verifies it in the actual target environment, preserves reproducible artifacts and reports deviations. Material discoveries trigger a counteroffer or explicit return to Offer rather than a silent quality downgrade.
+5. **Confirm & Close — owner judges evidence.** Separate technical verification from human aesthetic/experience acceptance. The owner may accept, conditionally accept, reject, or redirect. Close the *specific commitment* when its agreed criteria are met, even if nonblocking improvements remain; document remaining defects as separate follow-up commitments. Do not conceal failed mandatory criteria through a general acceptance score.
+
+**Diagnostic feedback routing:** Return to Explore if the product intent is wrong; Offer if the approach or feasibility premise is wrong; Execute for a localized implementation defect. Reopen only the necessary stage and preserve accepted baselines. A closure decision is not automatically a release/deployment authorization.
+
+**Evidence-gated feasibility (risk-based):** Use a bounded technical spike/POC when there is material uncertainty about visual quality, technical capability, cost, performance, integrations or production scalability. Specify the question, time/scope boundary, demonstrable artifact, objective checks, human review criteria and stopping point. Record limitations and whether evidence was actually inspected. Avoid speculative process overhead on familiar low-risk changes.
+
+**Continuity:** Record consequential offers, counteroffers, owner commitment/acceptance decisions, accepted baselines and outstanding follow-ups in the project's GDD/decision log and `PROJECT_STATE.md`. Distinguish a *milestone accepted for continued development* from *final production acceptance* and from *permission to merge, publish or deploy*. Preserve project-specific evidence in its own repository, not in the shared standards.
 
 ## 7. Handoff, drift and confidentiality
 
