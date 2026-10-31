@@ -8,6 +8,8 @@ All notable changes to the Universal Game Development Standard (UGDS) are record
 - Artifact-first handoff: the collaborator who authors an artifact commits and links it directly when safe repository access exists, instead of asking the owner to relay files.
 - Explicit distinction between approved original artwork and an unapproved editable interpretation, with fidelity review before acceptance.
 
+- Capability-aware reasoning and tool escalation: proactively suggest task-appropriate ChatGPT/Codex thinking effort or other resources when justified, without automatic setting changes or ceremony.
+
 ### Notes
 - No new release permission, mandatory art creation, costs or retroactive project acceptance; existing checkpoint safeguards apply.
 
