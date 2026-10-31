@@ -41,6 +41,10 @@ Trackmaster is the first game under a new two-document requirements workflow. Ea
 - Engineering choices delegated to Codex:
 - Known dependencies and risks:
 
+## Git checkpoint delivery
+
+Read adopted AICP §6.2. Use a dedicated working branch, check CI/deployment and secret risks, and safely push intermediate and final checkpoints before reporting completion. Provide verified GitHub links. Do not force-push, merge or deploy without approval. If unsafe, report the blocker and independent backup status.
+
 ## Required workflow
 
 1. **Inspect and plan.** Confirm the governing versions, repository state, implementation strategy, and potential conflicts.
