@@ -2,6 +2,17 @@
 
 All notable changes to the Universal Game Development Standard (UGDS) are recorded here. Use semantic versions and pin a release tag or commit SHA in each game project.
 
+## [AICP 1.2.1] - 2026-10-31
+
+### Added
+- Default Codex working-branch synchronization with meaningful intermediate and final remote checkpoints.
+- Deployment, cost, secret and conflict safeguards plus independent backup handling when pushing is blocked.
+- First-instruction reinforcement in the Codex brief and conversation starter, alongside reading adopted AICP.
+
+### Notes
+- Development pushes do not authorize acceptance, merge, release or deployment.
+- UGDS v1.0.0 and existing project pins remain unchanged; explicit local-only exceptions are respected.
+
 ## [AICP 1.2.0] - 2026-10-31
 
 ### Added
