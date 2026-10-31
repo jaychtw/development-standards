@@ -2,6 +2,15 @@
 
 All notable changes to the Universal Game Development Standard (UGDS) are recorded here. Use semantic versions and pin a release tag or commit SHA in each game project.
 
+## [AICP 1.2.2] - 2026-10-31
+
+### Added
+- Artifact-first handoff: the collaborator who authors an artifact commits and links it directly when safe repository access exists, instead of asking the owner to relay files.
+- Explicit distinction between approved original artwork and an unapproved editable interpretation, with fidelity review before acceptance.
+
+### Notes
+- No new release permission, mandatory art creation, costs or retroactive project acceptance; existing checkpoint safeguards apply.
+
 ## [AICP 1.2.1] - 2026-10-31
 
 ### Added
