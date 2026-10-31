@@ -26,6 +26,14 @@ Read the pinned UGDS and GDD **before implementation**. Treat both as binding. D
 
 Trackmaster is the first game under a new two-document requirements workflow. Earlier games relied principally on their individual GDDs. For Trackmaster, both UGDS v1.0.0 (tag `v1.0.0`, commit `d5c6696efdd6efc028118600466db44aecae0c9b`) and its project GDD are binding. Explicitly acknowledge successful preflight before continuing. **Trackmaster must meet its own game-quality goals; it is not merely a process test.**
 
+## Commitment Cycle preflight (proportionate)
+
+- **Explore:** What owner-approved intent or candidate GDD is being evaluated? Which assumptions remain unproven?
+- **Offer:** What can Codex demonstrably deliver with the available environment, budget and tools? Identify material uncertainties, alternatives/counteroffers and whether a bounded technical spike is warranted.
+- **Commitment gate:** Record owner-approved scope, exclusions, constraints, evidence, acceptance criteria, stopping conditions and release permissions. An assessment-only assignment does not authorize implementation.
+- **Execute:** Implement only the agreed commitment and report deviations or a revised offer when assumptions fail.
+- **Confirm & Close:** Present reproducible technical and visual evidence for owner review; record accepted, conditional, rejected or reopened outcome. Separate milestone acceptance from final quality and deployment authority.
+
 ## Objective and boundaries
 - Deliver:
 - Explicitly out of scope:
@@ -79,6 +87,15 @@ Statuses: Pass / Fail / Not Applicable (reason) / Not Verified. Do not mark unpe
 - Conflicts / approved exceptions:
 - Preflight outcome: Passed / Blocked
 - Implementation started only after preflight: Yes / No (explain)
+
+## Offer and closure record
+- Feasibility uncertainties and evidence / spike outcome:
+- Codex offer or counteroffer and tradeoffs:
+- Owner commitment authorization and scope:
+- Owner confirmation status (accepted / conditional / rejected / pending):
+- Accepted baseline and independent follow-up commitments:
+- Reopened stage and rationale, if applicable:
+- Separate merge / release / deployment authorization:
 
 ## Final delivery report
 - Built:

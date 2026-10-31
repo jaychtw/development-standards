@@ -2,6 +2,18 @@
 
 All notable changes to the Universal Game Development Standard (UGDS) are recorded here. Use semantic versions and pin a release tag or commit SHA in each game project.
 
+## [AICP 1.2.0] - 2026-10-31
+
+### Added
+- Proportionate Explore → Offer → Execute → Confirm & Close collaboration lifecycle with an explicit commitment gate.
+- Codex feasibility assessment and counteroffer role before high-uncertainty implementation.
+- Evidence-gated technical spikes, diagnostic feedback routing, milestone acceptance and separate follow-up commitments.
+- Codex brief fields for Offer-stage evidence, owner commitment and closure outcomes.
+
+### Notes
+- AICP collaboration update only; UGDS v1.0.0 and existing project pins/acceptance criteria remain unchanged.
+- Does not authorize implementation, merge, release, deployment, new costs or retroactive adoption.
+
 ## [AICP 1.1.0] - 2026-10-29
 
 ### Added
