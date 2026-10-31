@@ -105,6 +105,17 @@ When a collaborator creates an approved or reviewable implementation artifact (f
 
 This is an **artifact custody default**, not an additional release gate or a requirement to create art for every coding task. Human approval, existing scope limits and separate release authorization remain unchanged.
 
+### 6.4 Capability-aware reasoning and tool escalation
+
+Treat reasoning effort, available tools, evidence gathering, specialist agents, and human judgment as **adaptive problem-solving resources**, not fixed defaults or status signals. The advisory AI should proactively flag when the task's complexity, uncertainty, consequences, or observed failure modes provide a material reason to change approach—including recommending a higher or lower ChatGPT thinking effort or a particular Codex effort **before** issuing a substantial assignment where practicable.
+
+- **Diagnose the bottleneck first:** Distinguish reasoning depth from missing evidence, unclear acceptance criteria, visual judgment, implementation execution, tool access, or verification. More thinking alone does not solve an absent artifact or inadequate test.
+- **Recommend proportionately:** Give a concise task-specific suggestion and rationale only when it is likely to affect outcome. Avoid repetitive notifications, treating maximum effort as universally optimal, or creating an additional approval ceremony.
+- **Preserve human control:** The owner chooses model settings, budgets, scope, and delegation. The agent does not claim to switch its own thinking effort or know its limits precisely; any self-assessment is a fallible recommendation, not measured proof.
+- **Use feedback:** Compare accepted outcomes, rework, latency and resource use where evidence exists; revise recommendations when results contradict expectations. Do not invent performance gains or imply an effort setting guarantees quality.
+
+This principle applies across design, implementation, debugging, review and other collaboration tasks; it is not a mandatory High/Extra High setting or a new project-quality gate.
+
 ## 7. Handoff, drift and confidentiality
 
 When transitioning conversations, prepare a concise handoff covering project link, source revision, current phase, accepted decisions, rejected/deferred alternatives, reasoning, pending approvals, risks and next action. Link documents rather than replicate them. If not possible, say what was not recovered.
