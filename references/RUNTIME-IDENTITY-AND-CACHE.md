@@ -23,6 +23,6 @@ For publication, inspect actual deployed identity and canonical asset bytes, the
 ## Worked evidence
 
 - [Accepted packaged-build investigation, controlled inputs and same-profile upgrades](https://github.com/jaychtw/shadow-becomes-me/blob/5e26b0c4b521186114d1041a98ccaa3b0cfe7f8d/docs/PLAYTEST_ROUND3.md).
-- [Independent canonical public hashes and actual input checks](https://github.com/jaychtw/shadow-becomes-me/tree/ce74711/evidence/publication/live).
+- [Independent canonical public hashes and actual input checks](https://github.com/jaychtw/shadow-becomes-me/tree/ce747118e546c13854b1137270f638e0b2a038a7/evidence/publication/live).
 
 The case's exact earlier owner cache incident remains unconfirmed. This recipe records the demonstrated mitigation/verification method, not a universal cache defect or proof that all projects need this implementation. Core requirements already covered by UGDS-P02/Q04/Q05/Q06 and AICP§4/§6/§7/§10 are not duplicated here. Artifact custody and reasoning escalation remain in the existing unmerged proposal; no parallel proposal is introduced.
