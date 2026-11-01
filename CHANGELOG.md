@@ -2,6 +2,11 @@
 
 All notable changes to the Universal Game Development Standard (UGDS) are recorded here. Use semantic versions and pin a release tag or commit SHA in each game project.
 
+## [Unreleased — reference proposal]
+
+- Proposed optional runtime-identity/cache verification recipe, revision1: frozen artifact provenance, complete versioned asset graphs and same-profile upgrade evidence.
+- Compatibility: adopted UGDS1.0.0 / AICP1.2.1 and all existing project pins/acceptance requirements remain unchanged. Does not adopt pending AICP1.2.2 or add a mandatory workflow.
+
 ## [AICP 1.2.1] - 2026-10-31
 
 ### Added

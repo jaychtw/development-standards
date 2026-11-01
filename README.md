@@ -35,3 +35,7 @@ Codex should safely push meaningful intermediate and final checkpoints to a work
 Human creative director owns design and approval; advisory AI challenges and clarifies; Codex evaluates feasibility, implements and reports; the **individual project repository** stores durable approved decisions and evidence. AI memory aids navigation, but is not the authoritative record.
 
 The standards repository holds reusable process and quality rules, **not** confidential personal conversations or project-specific specifications. AICP does not silently modify UGDS 1.0.0.
+
+## Optional technical references
+
+- [Runtime identity and cache verification](references/RUNTIME-IDENTITY-AND-CACHE.md): non-normative worked recipe; no change to adopted versions, project pins or release authority.
