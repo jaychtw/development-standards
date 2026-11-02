@@ -7,6 +7,10 @@
 **Assignment:** [POC / full build / revision / release]  
 **Authorized branch / deployment target:** [details]
 
+## AI-native delegation and context inheritance
+
+Preserve the owner's experiential goal, direct wording of consequential requests, examples and references in the canonical design/decision record; mark derived technical choices as agent decisions. Within the approved commitment, choose implementation strategies, internal sequencing, test design and recovery mechanics without soliciting routine owner choices. Inter-agent handoff should be concise, link evidence and immutable revisions, and identify verified facts, unknowns and next authorized action; never pass a handoff claim off as owner approval. Escalate only substantive changes to intended experience, cost, security/privacy, standards exceptions, or release/deployment.
+
 ## Governing instructions
 
 Read the pinned UGDS, adopted AICP, and GDD **before implementation**. Treat both as binding. Do not paraphrase or rewrite the universal standard for this project. If a requirement conflicts, record it and request a decision; do not silently drop a requirement. Project-specific instructions may strengthen UGDS. Only the creative director can approve a scoped exception to a mandatory rule.
