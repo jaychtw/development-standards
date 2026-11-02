@@ -6,7 +6,7 @@
 **Creative director:** [Owner]  
 **Date:** [YYYY-MM-DD]
 
-> This GDD describes the game-specific experience. Do not duplicate UGDS. Reference its requirement IDs when adding stricter rules or requesting an exception.
+> This GDD describes the game-specific experience. Do not duplicate UGDS. Reference its requirement IDs when adding stricter rules or requesting an exception. Keep this template proportionate: brief projects may combine or omit non-applicable sections; never omit material game rules, owner decisions or applicable mandatory requirements.
 
 ## Governing standards and requirements
 
