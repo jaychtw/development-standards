@@ -1,6 +1,6 @@
 # AI Collaboration & Continuity Protocol (AICP)
 
-**Version:** 1.4.0  
+**Version:** 1.5.0  
 **Status:** Adopted collaboration baseline  
 **Applies to:** AI-assisted game and application development adopting this protocol  
 **Owner:** Human product owner / creative director  
@@ -13,6 +13,18 @@ Preserve durable design intent, decision rationale and accountable delivery acro
 **Core rule:** Memory enables familiarity; project documentation establishes authority; implementation and evidence establish what exists.
 
 No AI may claim complete historical recall, successful document retrieval, or owner approval without evidence. Never substitute inferred recollections for verified records.
+
+## 1.1 AI-native collaboration and owner experience
+
+**Default operating model:** The human owner supplies creative intent, user-experience outcomes, constraints, examples, references, and explicit requests. AI collaborators own the internal coordination and technical means of achieving the agreed outcome. Do not ask the owner to manage agent-to-agent handoffs, choose routine algorithms, resolve routine engineering details, maintain duplicate documents, or supervise safe development checkpoints.
+
+**Preserve intent at full fidelity:** Record owner-supplied examples, visual references, user stories, acceptance feedback and intended user experience with enough specificity to reproduce their meaning. Do not reduce a concrete creative directive to a vague abstraction, substitute an AI's preferred design for it, or mistake illustrative examples for exhaustive requirements without evidence. Distinguish direct owner statements from AI interpretations, implementation decisions and inferred assumptions.
+
+**Delegate execution, not creative authorship:** Within an explicitly approved objective and boundaries, agents may independently select architecture, implementation sequence, tests, asset construction techniques, recovery method, and internal division of labor. They should surface material tradeoffs or a genuine inability to satisfy the intended experience; otherwise report the result and relevant evidence rather than narrating internal procedures.
+
+**AI-to-AI exchange:** Communicate through concise machine-reconstructable records: canonical source links, immutable revisions, accepted intent and exclusions, active commitment, observed implementation and test evidence, gaps and next authorized action. The receiving agent verifies the record against Git and actual artifacts instead of trusting handoff assertions. Prefer references and compact deltas over re-copying the entire conversation.
+
+**Authority boundary:** Owner autonomy does not disappear through delegation. Explicit approval remains necessary for substantial changes to creative intent, budget/expenditure, material risk, privacy/security, public release/deployment, and mandatory standard exceptions. Existing authorized routine execution and safe working-branch pushes proceed without repeated owner approval. Owner-provided requests always override agent-authored proposals within higher-priority safety and platform requirements.
 
 ## 2. Roles and decision ownership
 
@@ -136,6 +148,12 @@ Agents must not claim they persist independent memory across sessions. The recov
 ## 8. Maintenance and amendment
 
 Reusable process lessons belong here, with a version change and changelog entry. Product-specific decisions belong in their individual repositories. Changes to this protocol require owner review; agents should propose improvements without silently modifying the governing baseline.
+
+## 8.1 Inter-agent learning and standards integration
+
+Individual project agents may capture reproducible lessons in the project repository and propose generalizable changes. They should not silently promote a local workaround into a universal obligation. Before modifying a shared standard, the integrating agent assesses cross-project applicability, semantic conflicts, existing provisions, documentation cost, and opportunities to remove or replace older rules. A clean Git merge is not proof of conceptual consistency.
+
+Agents should coordinate the evidence gathering and comparison themselves. Involve the owner only when a proposed change materially alters owner authority, creative approval, security/privacy, expenditure, or other consequential governance boundaries. Preserve the prior adopted version and do not silently update existing project pins. Prefer one coherent portfolio-level amendment to several overlapping local amendments.
 
 ## 9. Continuous improvement at cycle closure
 
