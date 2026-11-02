@@ -50,6 +50,13 @@ Read adopted AICP §6.2. Use a dedicated working branch, check CI/deployment and
 
 Follow adopted AICP §6.3 as well as §6.2. For consequential checkpoints, ensure another session can reconstruct work from pushed editable sources, config/instructions, approved scope, and a concise recovery pointer with the last *verified remote* SHA and outstanding work. A preview or local ZIP alone is not durable. When feasible, verify a clean checkout at a meaningful gate. If replacing a failed session, reconcile handoff claims with Git history and report missing/unverified work before any newly authorized implementation. Recovery/review alone never grants execution or release authority.
 
+## Choose the appropriate execution depth
+
+- **Routine authorized change:** targeted preflight → edit/test → checkpoint push → concise result. No standalone feasibility report or full campaign test matrix unless relevant.
+- **Bounded change:** concise Offer only if a material feasibility unknown remains; otherwise follow the approved brief and targeted checks.
+- **Exploratory change:** substantive Offer/POC and explicit commitment before expansion.
+- Keep source verification, safety, budget, licensing, branch/checkpoint and release boundaries unchanged in all modes. If any stated generic step conflicts with the task's narrow authorized scope, apply it only when relevant and label it not applicable rather than silently expanding scope.
+
 ## Required workflow
 
 1. **Inspect and plan.** Confirm the governing versions, repository state, implementation strategy, and potential conflicts.

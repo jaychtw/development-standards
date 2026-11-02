@@ -5,7 +5,7 @@ Central, versioned guidance for AI-assisted games and application projects.
 ## Governing documents
 
 - [UGDS v1.0.0](UGDS.md) — adopted **game development quality** baseline. Pin the precise UGDS tag or commit in each adopting project; existing projects are not retroactively certified.
-- [AI Collaboration & Continuity Protocol (AICP) v1.3.0](AI-COLLABORATION-PROTOCOL.md) — shared AI/human collaboration, memory recovery, decisions, evidence, handoffs and approval boundaries. Applies to games and apps that adopt it.
+- [AI Collaboration & Continuity Protocol (AICP) v1.4.0](AI-COLLABORATION-PROTOCOL.md) — shared AI/human collaboration, memory recovery, decisions, evidence, handoffs and approval boundaries. Applies to games and apps that adopt it.
 
 ## Templates
 
@@ -21,6 +21,10 @@ At project closure, the **individual game/app conversation** coordinates its Pos
 ## Continuous improvement
 
 At a meaningful cycle closure, collaborators should evaluate transferable lessons without waiting for a separate reminder. Update AICP for collaboration practices, UGDS for applicable product-quality practices, and individual project records for local decisions. Revise only where evidence and impact warrant it; consult AICP §9 for change-control boundaries.
+
+## Minimum sufficient process
+
+AICP §6.1A introduces **routine / bounded / exploratory** operating modes. This reduces process overhead rather than creating new gates: routine authorized changes receive targeted checks and a safe push, bounded work gets only the needed feasibility review, and exploratory/high-risk work retains a substantive Offer and explicit commitment. Escalate consequential exceptions, not routine engineering decisions. Avoid duplicate project records and rely on links to authoritative sources.
 
 ## Commitment Cycle
 

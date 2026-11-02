@@ -1,6 +1,6 @@
 # AI Collaboration & Continuity Protocol (AICP)
 
-**Version:** 1.3.0  
+**Version:** 1.4.0  
 **Status:** Adopted collaboration baseline  
 **Applies to:** AI-assisted game and application development adopting this protocol  
 **Owner:** Human product owner / creative director  
@@ -81,6 +81,24 @@ Use the Commitment Cycle as a **proportionate collaboration framework**, not fou
 **Evidence-gated feasibility (risk-based):** Use a bounded technical spike/POC when there is material uncertainty about visual quality, technical capability, cost, performance, integrations or production scalability. Specify the question, time/scope boundary, demonstrable artifact, objective checks, human review criteria and stopping point. Record limitations and whether evidence was actually inspected. Avoid speculative process overhead on familiar low-risk changes.
 
 **Continuity:** Record consequential offers, counteroffers, owner commitment/acceptance decisions, accepted baselines and outstanding follow-ups in the project's GDD/decision log and `PROJECT_STATE.md`. Distinguish a *milestone accepted for continued development* from *final production acceptance* and from *permission to merge, publish or deploy*. Preserve project-specific evidence in its own repository, not in the shared standards.
+
+### 6.1A Proportionate execution — minimum sufficient process
+
+**Classify by risk and uncertainty, not task size or AI ability alone.** Retain safety, authority, evidence honesty and durable checkpoints at every level. The following are operating defaults, not three new approval ceremonies:
+
+| Mode | Typical change | Default handling |
+| --- | --- | --- |
+| Routine | Localized bug, copy or low-risk polish within an existing commitment | Implement → targeted checks → safe checkpoint push → concise report. No separate Offer document or owner reconfirmation when already authorized. |
+| Bounded | New mechanic, contained POC, consequential revision | Short repository/standards preflight, explicit scope and owner commitment where not already given → implement → proportionate evidence → review. An Offer can be included in the same message as the brief. |
+| Exploratory | New product, high-uncertainty art/architecture, consequential cost/security/release decisions | Explore → substantive Offer/spike if warranted → owner commitment → Execute → Confirm & Close. |
+
+**Exception-driven escalation:** After authorization, the agent autonomously chooses low-impact engineering methods, tests, safe branch checkpoints, documentation updates and corrective refinements within scope. Interrupt the owner only for material changes to scope, gameplay/design intent, quality target, cost, privacy/security, access, release/deployment or a mandatory standards exception; or where an essential decision genuinely cannot be inferred from approved records. Block only the affected operation where practical.
+
+**Documentation economy:** Maintain one authoritative home per fact: GDD/decision log for intended design and approval, code plus evidence for observed behavior, PROJECT_STATE for a short pointer/snapshot, active brief for assigned scope, and Git history/recovery pointer for checkpoint provenance. Other documents should link rather than repeat. Do not manufacture redundant ZIPs, lengthy compliance tables, new ADRs or repeated status reports when they add no decision or recovery value. A brief may be a small issue/message with links for routine work; templates are aids, not mandatory filled forms.
+
+**Verification proportionality:** Run the relevant checks for the change, retaining mandatory release-wide checks for actual release readiness; label untouched areas and unperformed tests honestly. A bounded POC is not a full release. The UGDS remains authoritative where applicable: proportionality cannot waive its mandatory requirements or the owner's acceptance gates.
+
+**Outcome over ceremony:** Assess time to owner decision, unnecessary interruptions, reproducibility, risk controls and actual product quality—not document quantity or process recitation. Simplify when the same safeguard can be fulfilled with fewer artifacts.
 
 ### 6.2 Durable development checkpoints
 

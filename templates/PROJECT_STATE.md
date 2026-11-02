@@ -1,6 +1,6 @@
 # Project State — [PROJECT NAME]
 
-> **Snapshot only.** This file indexes authoritative decisions and evidence; it does not supersede the GDD, decision log or code. Update at meaningful milestones. Do not include secrets.
+> **Snapshot only.** This file indexes authoritative decisions and evidence; it does not supersede the GDD, decision log or code. Update at meaningful milestones; omit inapplicable sections and link instead of copying detailed records. Do not include secrets.
 
 - **Repository:** [URL]
 - **Last reviewed:** [YYYY-MM-DD, timezone]

@@ -2,6 +2,17 @@
 
 All notable changes to the Universal Game Development Standard (UGDS) are recorded here. Use semantic versions and pin a release tag or commit SHA in each game project.
 
+## [AICP 1.4.0] - 2026-11-03
+
+### Simplified
+- Added risk-calibrated routine, bounded and exploratory execution modes; no new approval ceremonies.
+- Made escalation exception-driven within an already authorized commitment.
+- Established documentation economy and proportional evidence/verification expectations.
+- Updated Codex brief, conversation starter, project-state and GDD templates to avoid boilerplate and duplicative records.
+
+### Unchanged
+- UGDS v1.0.0, existing project pins, owner creative/financial/release authority, checkpoints, recovery protections and honest verification requirements.
+
 ## [AICP 1.3.0] - 2026-11-03
 
 ### Added
