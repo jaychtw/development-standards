@@ -5,7 +5,7 @@ Central, versioned guidance for AI-assisted games and application projects.
 ## Governing documents
 
 - [UGDS v1.0.0](UGDS.md) — adopted **game development quality** baseline. Pin the precise UGDS tag or commit in each adopting project; existing projects are not retroactively certified.
-- [AI Collaboration & Continuity Protocol (AICP) v1.2.1](AI-COLLABORATION-PROTOCOL.md) — shared AI/human collaboration, memory recovery, decisions, evidence, handoffs and approval boundaries. Applies to games and apps that adopt it.
+- [AI Collaboration & Continuity Protocol (AICP) v1.3.0](AI-COLLABORATION-PROTOCOL.md) — shared AI/human collaboration, memory recovery, decisions, evidence, handoffs and approval boundaries. Applies to games and apps that adopt it.
 
 ## Templates
 
@@ -29,6 +29,10 @@ At a meaningful cycle closure, collaborators should evaluate transferable lesson
 ## Durable development by default
 
 Codex should safely push meaningful intermediate and final checkpoints to a working branch and provide permanent GitHub links before reporting completion. This is preservation, not acceptance or deployment permission. The first Codex brief must both require reading adopted AICP and restate the checkpoint rule. See [AICP §6.2](AI-COLLABORATION-PROTOCOL.md).
+
+## Workspace recovery
+
+AICP §6.3 adds proportionate recovery-ready Git checkpoints, concise handoff pointers and an evidence-first recovery mode when cloud workspaces disappear. A handoff is not implementation authorization. Existing project standards pins do not change automatically.
 
 ## Working model
 
