@@ -2,6 +2,17 @@
 
 All notable changes to the Universal Game Development Standard (UGDS) are recorded here. Use semantic versions and pin a release tag or commit SHA in each game project.
 
+## [AICP 1.5.0] - 2026-11-03
+
+### Added / clarified
+- AI-native, owner-experience-driven delegation: preserve concrete creative requests and references while letting agents own internal technical collaboration.
+- Machine-reconstructable inter-agent handoffs that distinguish explicit owner intent, agent decisions and observed evidence.
+- Portfolio-level semantic reconciliation for standards contributions from independent project agents.
+- Lean updates to conversation starter, Codex brief and project-state template.
+
+### Unchanged
+- UGDS v1.0.0, existing project pins, owner authority over material design/cost/risk/release decisions, safe Git checkpoints, and evidence integrity.
+
 ## [AICP 1.4.0] - 2026-11-03
 
 ### Simplified
