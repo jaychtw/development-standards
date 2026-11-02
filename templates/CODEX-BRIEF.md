@@ -46,6 +46,10 @@ Trackmaster is the first game under a new two-document requirements workflow. Ea
 
 Read adopted AICP §6.2. Use a dedicated working branch, check CI/deployment and secret risks, and safely push intermediate and final checkpoints before reporting completion. Provide verified GitHub links. Do not force-push, merge or deploy without approval. If unsafe, report the blocker and independent backup status.
 
+## Recovery-readiness and workspace continuity
+
+Follow adopted AICP §6.3 as well as §6.2. For consequential checkpoints, ensure another session can reconstruct work from pushed editable sources, config/instructions, approved scope, and a concise recovery pointer with the last *verified remote* SHA and outstanding work. A preview or local ZIP alone is not durable. When feasible, verify a clean checkout at a meaningful gate. If replacing a failed session, reconcile handoff claims with Git history and report missing/unverified work before any newly authorized implementation. Recovery/review alone never grants execution or release authority.
+
 ## Required workflow
 
 1. **Inspect and plan.** Confirm the governing versions, repository state, implementation strategy, and potential conflicts.
