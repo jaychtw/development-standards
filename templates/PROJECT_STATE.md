@@ -8,6 +8,7 @@
 - **Snapshot commit:** [SHA or UNVERIFIED]
 - **Last verified recoverable checkpoint:** [branch + remote SHA + URL, or UNVERIFIED]
 - **Active commitment / recovery pointer:** [approved brief + concise recovery record, or not applicable]
+- **Owner experience directive and reference index:** [canonical GDD/decision links with concrete examples and references]
 - **Current phase:** [exploration / design / implementation / QA / staging / released]
 - **Owner acceptance:** [pending / approved with reference]
 - **Project deployment:** [not authorized / staged / publicly deployed-and-verified / blocked, with evidence]
