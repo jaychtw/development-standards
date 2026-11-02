@@ -5,7 +5,7 @@ Central, versioned guidance for AI-assisted games and application projects.
 ## Governing documents
 
 - [UGDS v1.0.0](UGDS.md) — adopted **game development quality** baseline. Pin the precise UGDS tag or commit in each adopting project; existing projects are not retroactively certified.
-- [AI Collaboration & Continuity Protocol (AICP) v1.4.0](AI-COLLABORATION-PROTOCOL.md) — shared AI/human collaboration, memory recovery, decisions, evidence, handoffs and approval boundaries. Applies to games and apps that adopt it.
+- [AI Collaboration & Continuity Protocol (AICP) v1.5.0](AI-COLLABORATION-PROTOCOL.md) — shared AI/human collaboration, memory recovery, decisions, evidence, handoffs and approval boundaries. Applies to games and apps that adopt it.
 
 ## Templates
 
@@ -37,6 +37,10 @@ Codex should safely push meaningful intermediate and final checkpoints to a work
 ## Workspace recovery
 
 AICP §6.3 adds proportionate recovery-ready Git checkpoints, concise handoff pointers and an evidence-first recovery mode when cloud workspaces disappear. A handoff is not implementation authorization. Existing project standards pins do not change automatically.
+
+## AI-native operating principle
+
+The human owner specifies intended experience, creative examples and constraints; AI collaborators autonomously coordinate technical choices, verification, handoffs and lessons within approved scope. Handoff records are machine-reconstructable, evidence-linked and subordinate to explicit owner intent. See [AICP §1.1 and §8.1](AI-COLLABORATION-PROTOCOL.md). Agents escalate material exceptions, not ordinary implementation decisions.
 
 ## Working model
 
