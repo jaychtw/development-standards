@@ -6,6 +6,8 @@
 - **Last reviewed:** [YYYY-MM-DD, timezone]
 - **Maintainer / owner:** [role]
 - **Snapshot commit:** [SHA or UNVERIFIED]
+- **Last verified recoverable checkpoint:** [branch + remote SHA + URL, or UNVERIFIED]
+- **Active commitment / recovery pointer:** [approved brief + concise recovery record, or not applicable]
 - **Current phase:** [exploration / design / implementation / QA / staging / released]
 - **Owner acceptance:** [pending / approved with reference]
 - **Project deployment:** [not authorized / staged / publicly deployed-and-verified / blocked, with evidence]
@@ -45,6 +47,13 @@
 
 ## Next authorized step
 [One concrete next step; say explicitly if work requires owner approval.]
+
+## Recoverability (when work is active)
+
+- Reconstruction instructions / editable assets: [links or not yet verified]
+- Completed and in-progress work at last remote checkpoint: [brief summary or linked record]
+- Clean-checkout or equivalent recovery test: [verified result and date / not performed]
+- Unpushed or unrecoverable work: [known / unknown / none verified]
 
 ## Conversation handoff and provenance
 - Latest relevant conversation or handoff: [link / available summary]
