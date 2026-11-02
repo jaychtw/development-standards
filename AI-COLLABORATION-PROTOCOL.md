@@ -1,10 +1,10 @@
 # AI Collaboration & Continuity Protocol (AICP)
 
-**Version:** 1.2.1  
+**Version:** 1.3.0  
 **Status:** Adopted collaboration baseline  
 **Applies to:** AI-assisted game and application development adopting this protocol  
 **Owner:** Human product owner / creative director  
-**Date:** 2026-10-31
+**Date:** 2026-11-03
 
 ## 1. Purpose and boundaries
 
@@ -92,11 +92,24 @@ Use the Commitment Cycle as a **proportionate collaboration framework**, not fou
 4. **Exceptions:** Do not push when it could trigger unapproved deployment, publication, costs, secret exposure, destructive conflicts or a project-specific prohibition. Do not force-push or silently change workflow/settings. Report the specific blocker and provide an independently durable backup where feasible; a backup only in the same transient workspace is not independent preservation.
 5. **Authority:** Safe development-branch checkpoint pushes are routine and preauthorized for implementation work unless the owner specifies local-only work or repository policy prohibits them. Push does not mean owner acceptance, merge, release or deployment; those remain separate gates.
 
+### 6.3 Recovery readiness and workspace failure
+
+Cloud workspaces are disposable execution environments, not authoritative records. Durable Git checkpoints under §6.2 remain the primary defense; recovery also requires knowing **what a fresh agent can reconstruct**. Apply these expectations proportionately to substantial, uncertain, long-running or asset-heavy assignments; do not require a ceremony for every trivial edit.
+
+1. **Recoverable checkpoint content:** Preserve the source and editable assets needed to reproduce the checkpoint, meaningful configuration and dependency instructions, relevant evidence, and a concise statement of what is complete versus WIP. Avoid committing secrets, caches or oversized disposable artifacts. A screenshot, preview URL or compiled bundle alone does not establish recoverability.
+2. **Live recovery pointer:** At a consequential checkpoint, maintain a compact repository-side recovery record or update the existing project-state/handoff record linking the current branch and verified remote commit, active approved commitment and exclusions, completed versus incomplete work, known blockers, reproducibility commands, and next safe action. Use links instead of duplicating the GDD. The pointer must not imply that later local edits were pushed.
+3. **Risk-proportionate reproducibility check:** Before substantial asset-heavy continuation, or at a meaningful delivery gate, verify from a clean checkout or equivalent independent reconstruction that necessary inputs and instructions are actually available, when feasible. State what was checked and what remains unverified. Do not falsely claim a clean checkout based solely on a successful local build.
+4. **When workspace/session fails:** A replacement agent first verifies repository identity, branch tips, remote commits, adopted standards, approved GDD/decisions, project state, active commitment and recovery pointer. Compare previous handoff claims against Git evidence; distinguish preserved work, missing/unpushed work, historical test reports, independently rerun tests, and uncertain approvals. Re-establish the environment and rerun relevant checks where feasible before proceeding.
+5. **Authority on recovery:** A copied brief, ZIP, recovery note or prior agent claim is evidence, **not a new owner authorization**. Prefer the owner's latest explicit instruction and the recorded approved commitment. If the owner requests recovery or review only, stop after reporting recovered state; do not implement. Existing implementation authority may be continued only when demonstrably still applicable, within its unchanged scope and boundaries. Do not silently merge, deploy, incur cost or widen scope.
+6. **If remote pushing is unsafe:** Follow §6.2 exceptions and seek an independently durable backup where feasible; document exactly what remains at risk. Never represent a backup left solely in a failed or transient workspace as recoverable.
+
+**Goal:** Reduce the cost of interruption, not mandate redundant backups or additional approval loops.
+
 **First-instruction reinforcement:** At each new project, the initial Codex implementation brief must both direct Codex to read the adopted AICP and explicitly state the working-branch, intermediate-checkpoint and final-push requirement. This short reminder complements the governing protocol.
 
 ## 7. Handoff, drift and confidentiality
 
-When transitioning conversations, prepare a concise handoff covering project link, source revision, current phase, accepted decisions, rejected/deferred alternatives, reasoning, pending approvals, risks and next action. Link documents rather than replicate them. If not possible, say what was not recovered.
+When transitioning conversations, and especially after a workspace failure, follow §6.3 and prepare a concise handoff covering project link, source revision, current phase, accepted decisions, rejected/deferred alternatives, reasoning, pending approvals, risks and next action. Link documents rather than replicate them. If not possible, say what was not recovered.
 
 Do not put credentials, personal data, access tokens or sensitive private discussions into repository records. Verify repository visibility and intended audience before adding content. Private repositories are not a substitute for secret management.
 

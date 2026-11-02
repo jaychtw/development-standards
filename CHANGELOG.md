@@ -2,6 +2,18 @@
 
 All notable changes to the Universal Game Development Standard (UGDS) are recorded here. Use semantic versions and pin a release tag or commit SHA in each game project.
 
+## [AICP 1.3.0] - 2026-11-03
+
+### Added
+- Risk-proportionate recovery-ready checkpoints and concise repository recovery pointers for active work.
+- Explicit failed-session recovery procedure reconciling Git state, handoff claims, tests and owner authority.
+- Optional independent reconstruction/clean-checkout verification at meaningful gates.
+- Focused recovery guidance in conversation starter, Codex brief and project-state templates.
+
+### Notes
+- Responds to recurring transient cloud-workspace losses; no new paid backup service or routine approval ceremony.
+- UGDS v1.0.0 and existing project pins are unchanged. Safe development-branch pushes remain distinct from merge and deployment.
+
 ## [AICP 1.2.1] - 2026-10-31
 
 ### Added
