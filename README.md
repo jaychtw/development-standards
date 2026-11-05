@@ -7,6 +7,10 @@ Central, versioned guidance for AI-assisted games and application projects.
 - [UGDS v1.0.0](UGDS.md) — adopted **game development quality** baseline. Pin the precise UGDS tag or commit in each adopting project; existing projects are not retroactively certified.
 - [AI Collaboration & Continuity Protocol (AICP) v1.5.0](AI-COLLABORATION-PROTOCOL.md) — shared AI/human collaboration, memory recovery, decisions, evidence, handoffs and approval boundaries. Applies to games and apps that adopt it.
 
+## Optional technical references
+
+- [Three.js Game Skills — agent selection guide](references/THREEJS-GAME-SKILLS.md) — evaluated external Codex/Claude Code skills for gameplay, graphics, UI, renderer diagnostics, asset creation and reproducible visual QA. Advisory only: assess engine fit, pin and inspect upstream scripts, and preserve UGDS/AICP, $0 default, bilingual/accessibility and owner authority. No automatic installation or migration.
+
 ## Templates
 
 - [GDD](templates/GDD-TEMPLATE.md) — project gameplay/experience and rules.
