@@ -2,6 +2,11 @@
 
 All notable changes to the Universal Game Development Standard (UGDS) are recorded here. Use semantic versions and pin a release tag or commit SHA in each game project.
 
+## [Capability registry] - 2026-11-06
+
+- Added a small, advisory external-capability registry indexed by problems and goals, with Three.js Game Skills and PixelFX as initial reviewed examples.
+- Clarified reference versus adoption, provenance and evidence tiers; no new mandatory requirements, costs, or project changes.
+
 ## [Advisory reference] - 2026-11-06
 
 - Added an optional agent-facing assessment of the external Three.js Game Skills pack, with skill selection, adoption safeguards, transferable production techniques and evidence expectations.
