@@ -2,6 +2,11 @@
 
 All notable changes to the Universal Game Development Standard (UGDS) are recorded here. Use semantic versions and pin a release tag or commit SHA in each game project.
 
+## [Advisory reference] - 2026-11-06
+
+- Added an optional agent-facing assessment of the external Three.js Game Skills pack, with skill selection, adoption safeguards, transferable production techniques and evidence expectations.
+- No UGDS/AICP version change, automatic installation, project migration, new cost or relaxation of existing requirements.
+
 ## [AICP 1.5.0] - 2026-11-03
 
 ### Added / clarified
