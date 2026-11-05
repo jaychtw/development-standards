@@ -9,6 +9,8 @@ Central, versioned guidance for AI-assisted games and application projects.
 
 ## Optional technical references
 
+The [Capability Registry](references/CAPABILITY-REGISTRY.md) is the curated entry point for external technical and creative resources. Agents may discover, assess and selectively adopt appropriate tools without turning the index into a mandatory dependency list.
+
 - [Three.js Game Skills — agent selection guide](references/THREEJS-GAME-SKILLS.md) — evaluated external Codex/Claude Code skills for gameplay, graphics, UI, renderer diagnostics, asset creation and reproducible visual QA. Advisory only: assess engine fit, pin and inspect upstream scripts, and preserve UGDS/AICP, $0 default, bilingual/accessibility and owner authority. No automatic installation or migration.
 
 ## Templates
