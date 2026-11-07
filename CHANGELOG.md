@@ -1,5 +1,19 @@
 # Changelog
 
+## [AICP 2.0.0 / UGDS 2.0.0 — PROPOSED] - 2026-11-07
+
+### Breaking process revision
+
+- Replaces recurring Explore/Offer/Commit/Execute/Confirm/Release owner gates with one owner-approved Design Freeze followed by autonomous complete delivery.
+- Requires ChatGPT to exhaust foreseeable creative/deployment questions before emitting the **first FINAL GDD**, with no obligatory draft-GDD or post-implementation design review.
+- Requires automatic, simultaneous companion one-shot Codex brief and an advance, destination-specific authorization matrix for implementation, merge, deployment and optional independent Possibility publication.
+- Removes mandatory mid-build owner visual-POC approval; makes internal feasibility spikes, visual checking and technical self-correction Codex responsibilities.
+- Replaces fixed four-viewport ritual, unconditional bilingual requirement and blanket QA/acceptance matrices with explicit GDD choices and risk-based, outcome-centered checks. EN/zh-TW remains the portfolio recommendation; accessible essential interactions and honest release verification remain mandatory.
+- Retains hard stops for genuine design impossibility, new spending, security/privacy, access, license, safety and unauthorized public release. Protected-branch and host controls cannot be bypassed.
+- Simplifies PROJECT_STATE and all templates; avoids serial human confirmation, redundant records and test-count theater.
+- **Non-retroactive:** v1 projects retain existing pinned requirements until explicitly migrated. This is a reviewable proposal, not an already adopted or tagged release.
+
+
 All notable changes to the Universal Game Development Standard (UGDS) are recorded here. Use semantic versions and pin a release tag or commit SHA in each game project.
 
 ## [Advisory reference] - 2026-11-06
