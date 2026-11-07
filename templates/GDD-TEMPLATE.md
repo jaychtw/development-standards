@@ -1,104 +1,63 @@
-# [Game Title] — Game Design Document
+# [Project Title] — FINAL Game / App Design & Delivery Contract
 
-**GDD version:** 0.1.0  
-**Status:** Draft  
-**Universal standard:** UGDS v1.0.0, pinned to tag/commit: [SHA or release URL]  
-**Creative director:** [Owner]  
-**Date:** [YYYY-MM-DD]
+**Status:** FINAL — owner-approved at Design Freeze (do not create a Draft GDD)
+**Freeze date and authorization evidence:** [date + conversation/approval reference]
+**Project repository and source visibility:** [owner/repo, public/private]
+**AICP / UGDS adoption:** [exact version + immutable commit/tag; UGDS only for games or explicitly adopted app provisions]
+**Release mode:** Release / Experiment (default Release)
 
-> This GDD describes the game-specific experience. Do not duplicate UGDS. Reference its requirement IDs when adding stricter rules or requesting an exception. Keep this template proportionate: brief projects may combine or omit non-applicable sections; never omit material game rules, owner decisions or applicable mandatory requirements.
+> Work through AICP v2's design-completeness questions *in conversation*, before creating this file. Empty placeholders are not decisions. Omit truly irrelevant sections, but do not leave consequential choices unresolved or invite post-build design negotiation. The FINAL GDD is the sole owner-approved product/design authority; Codex decides only bounded implementation details.
 
-## Governing standards and requirements
+## 1. Product identity
+- Pitch and what makes it distinctive:
+- Intended audience, emotional or practical experience and session/use pattern:
+- Owner's exact relevant examples and creative references (with source links):
+- Non-goals and explicitly excluded features:
 
-This project adopts the **Universal Game Development Standard (UGDS) [version]**, maintained at https://github.com/jaychtw/game-development-standards and pinned to **[immutable tag and commit SHA]**. The GDD defines this game's creative direction, mechanics, content, and project-specific requirements; UGDS governs reusable development, localization, accessibility, visual-production, quality-assurance, and delivery requirements.
+## 2. Complete interaction specification
+- Onboarding, start, main user journey/core loop, success/completion, failure/retry, exit/restart:
+- All user actions, controls and feedback (desktop/touch where required):
+- Entities, states, rules, timing, quantities, difficulty, scoring/progression and content inventory:
+- Edge cases, invalid actions, persistence, recovery and expected fallback behavior:
+- For apps: workflows, data sources, errors, permissions and offline/network handling:
+- Critical screens, navigation, copy and interaction outcomes:
 
-**For matters not specified or fully detailed in this GDD, the applicable UGDS requirements shall govern.** Applicable laws, regulations, platform policies, and safety requirements also apply and take precedence where required. The GDD may add more specific or stricter requirements, but cannot silently waive mandatory UGDS requirements.
+## 3. Look, feel and content
+- Visual direction, references, composition/camera/perspective, layout and required assets:
+- Explicit observable finish criteria (what would count as visually wrong):
+- Animation, effects, audio, sound control and reduced-motion behavior:
+- Content inventory and accepted source/provenance/license constraints:
 
-If a GDD requirement appears to conflict with UGDS, **pause implementation of the affected matter**, document the conflict, and obtain the creative director's decision and any expressly approved exception. Neither omission, ambiguity, nor inability to access UGDS constitutes permission to disregard it. **Codex must verify access to and read the pinned UGDS before any implementation begins.**
+## 4. Platforms, quality and architecture boundaries
+- Target devices, viewport/orientation coverage and input modalities:
+- Languages (portfolio default EN + zh-TW; specify whether live switching applies):
+- Accessibility, privacy/security, performance, storage and offline expectations:
+- Approved technology/budget/dependency constraints:
+- Engineering methods **delegated to Codex**:
+- Explicit fallback hierarchy for foreseeable constraints (equivalent substitutions only):
 
-## 1. One-sentence pitch
-[What the player does, and why it is interesting.]
+## 5. Acceptance contract (decided BEFORE build)
+- Must-pass end-to-end success and failure/retry scenarios:
+- Core logic test scenarios and challenging edge cases:
+- Actual layout, language, accessibility and visual checks:
+- Release-critical criteria, allowable limitations, and tests not required:
+- Definition of finished release, with no implied follow-on phase:
 
-## 2. Audience and intended experience
-- Target players / age:
-- Primary platform and orientation:
-- Emotional tone and session length:
-- What the game is **not**:
-
-## 3. Core loop and controls
-- Start / tutorial:
-- Player decisions:
-- State changes and feedback:
-- Win / lose / retry:
-- Desktop input:
-- Touch input:
-- Accessibility adaptations:
-
-## 4. Rules and game state
-- Board/world representation:
-- Entities and their attributes:
-- Valid actions and turn/timing order:
-- Constraints, scoring, and progression:
-- Determinism/randomness and visibility:
-- Edge cases and failure recovery:
-
-## 5. Content and difficulty
-- Levels / missions / chapters:
-- Difficulty curve:
-- Hint/assistance approach:
-- Replay or practice:
-- Balance / solvability acceptance:
-
-## 6. Visual direction and production
-- Style and visual references (reference only, not production assets):
-- Camera/perspective and composition:
-- Required assets, animation, and effects:
-- Gameplay readability and touch-target requirements:
-- Representative **in-engine** visual POC scene:
-- Production pipeline options and risks:
-- Visual acceptance criteria and approval checkpoint:
-- Originality / licensing considerations:
-
-**UGDS-V01–V06 apply. Prototype completion is not final visual acceptance.**
-
-## 7. Sound and motion
-- Sound and mute behavior (if applicable):
-- Animation and reduced-motion behavior:
-
-## 8. Localization
-- Project terminology in English and zh-TW:
-- Text expansion or font concerns:
-- Dynamic and contextual messages:
-
-**UGDS-L01–L02 apply.**
-
-## 9. Progress and technical boundaries
-- Save/resume behavior:
-- Offline/network expectations:
-- Device/performance targets:
-- Technology restrictions, if any:
-- Explicitly excluded features:
-
-## 10. QA and acceptance
-- Core engine tests:
-- End-to-end browser scenarios:
-- Full campaign/playthrough coverage:
-- Layout and accessibility checks:
-- Visual review and screenshot checklist:
-- Build, CI, and live deployment verification:
-- Outstanding human/physical-device testing:
-
-## 11. Decisions and risks
-| Decision or risk | Owner | Status | Resolution / acceptance |
-| --- | --- | --- | --- |
-| [Example] | [Owner] | Open | [Next step] |
-
-## 12. UGDS applicability and exceptions
-| Requirement ID | Status (Applies / N/A / Exception requested) | Rationale / approval |
+## 6. Release authorization — explicit, not inferred
+| Action | Authorized at freeze? | Exact target, constraints and required checks |
 | --- | --- | --- |
-| [UGDS-...] | [Status] | [Evidence or reason] |
+| Full implementation and safe working-branch pushes | Yes / No | [repo, branch policy] |
+| PR / merge to release branch | Yes / No | [protected-branch requirements; no bypass] |
+| Public/private deployment and hosting | Yes / No | [exact hosting, URL/path, visibility, credentials policy] |
+| Possibility catalog update / independent publish | Yes / No | [portal repo, Games/Apps, approved artwork or fallback, portal policy] |
+| External services / data sharing / spend | Yes / No | [explicit services, scope, $0 ceiling by default] |
 
-No mandatory requirement is waived without documented creative-director approval.
+Do not interpret blanks or "TBD" as authorization. If a step is not authorized, Codex must not execute that step, but should complete authorized work and report the precise final handoff.
 
-## 13. Definition of v1.0
-[Smallest complete, polished, verified release. Keep possible future modes out of scope unless approved.]
+## 7. Hard stops and decisions locked at freeze
+- Material design changes Codex **cannot** decide:
+- Preapproved alternatives/fallbacks Codex **can** decide:
+- Genuine escalation triggers: cost, safety, privacy, access, licenses, unresolvable creative change, unapproved public destination:
+- Final owner Design Freeze approval reference:
+
+**Handoff:** At the exact time this FINAL GDD is produced, ChatGPT also produces the companion ready-to-run Codex brief from templates/CODEX-BRIEF.md. Do not require the owner to ask for it or return for normal design clarification.

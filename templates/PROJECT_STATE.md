@@ -1,64 +1,17 @@
-# Project State — [PROJECT NAME]
+# Project State — [Project]
 
-> **Snapshot only.** This file indexes authoritative decisions and evidence; it does not supersede the GDD, decision log or code. Update at meaningful milestones; omit inapplicable sections and link instead of copying detailed records. Do not include secrets.
+> Optional, short recovery index; never duplicate the FINAL GDD, Codex brief or Git history. Update only when the recovery/release picture materially changes. Do not store secrets.
 
-- **Repository:** [URL]
-- **Last reviewed:** [YYYY-MM-DD, timezone]
-- **Maintainer / owner:** [role]
-- **Snapshot commit:** [SHA or UNVERIFIED]
-- **Last verified recoverable checkpoint:** [branch + remote SHA + URL, or UNVERIFIED]
-- **Active commitment / recovery pointer:** [approved brief + concise recovery record, or not applicable]
-- **Owner experience directive and reference index:** [canonical GDD/decision links with concrete examples and references]
-- **Current phase:** [exploration / design / implementation / QA / staging / released]
-- **Owner acceptance:** [pending / approved with reference]
-- **Project deployment:** [not authorized / staged / publicly deployed-and-verified / blocked, with evidence]
-- **Possibility publication:** [not started / deferred / pending approval / deployed-and-verified / blocked, with entry URL, portal commit and deployment evidence or explicit unknown]
-- **Standards:** UGDS [version + exact tag/SHA, if adopted]; AICP [version + tag/SHA]
+- **Project and repository:** [name, URL]
+- **FINAL GDD + Design Freeze authorization:** [immutable link; version/date]
+- **Adopted standards:** [AICP / UGDS immutable links]
+- **Codex one-shot assignment:** [link]
+- **Last verified remote source:** [branch + commit SHA/link]
+- **Recovered/reproducible inputs:** [editable assets/build instructions or verified gap]
+- **State:** [design freeze / implementing / partial-blocked / released]
+- **Build and QA:** [one evidence link; Pass/Fail/Not Verified; no fake independent verification]
+- **Project publication:** [not authorized / blocked / live + verified URL]
+- **Possibility publication:** [not authorized / deferred / blocked / live + verified URL]
+- **Only genuine blocker or next authorized action:** [one sentence, or None]
 
-## One-paragraph intent
-[Product purpose, intended users and the differentiating experience.]
-
-## Authoritative documents
-- GDD / specification: [path + version]
-- Decision log / ADRs: [path]
-- Current approved implementation brief: [path]
-- QA and screenshots: [paths]
-- Release/deployment record: [path or not applicable]
-
-## Accepted / frozen decisions
-| ID | Decision | Why / alternatives | Approval or source |
-|---|---|---|---|
-| D-001 | [decision] | [concise rationale and key rejected option] | [link / date] |
-
-## Deferred / rejected proposals
-| Proposal | Status | Rationale / reconsideration trigger | Evidence |
-|---|---|---|---|
-| [proposal] | [deferred/rejected] | [reason or new condition] | [link] |
-
-## Verified current status
-- **Implemented:** [evidence-linked statement]
-- **Tests / review:** [reported vs independently verified and date]
-- **Not verified:** [explicit gaps]
-- **Operational / release readiness:** [separate from local implementation]
-
-## Open questions, risks and blockers
-| Priority | Item | Owner decision needed / next evidence |
-|---|---|---|
-| [priority] | [item] | [next action] |
-
-## Next authorized step
-[One concrete next step; say explicitly if work requires owner approval.]
-
-## Recoverability (when work is active)
-
-- Reconstruction instructions / editable assets: [links or not yet verified]
-- Completed and in-progress work at last remote checkpoint: [brief summary or linked record]
-- Clean-checkout or equivalent recovery test: [verified result and date / not performed]
-- Unpushed or unrecoverable work: [known / unknown / none verified]
-
-## Conversation handoff and provenance
-- Latest relevant conversation or handoff: [link / available summary]
-- Known inaccessible context: [unknowns, if any]
-- Last update reason: [decision / milestone / verified status]
-
-**Maintenance rule:** Update when direction, approved requirements, phase, or evidence materially changes. Do not auto-mark a proposal approved or a reported test independently verified.
+Do not request a new owner sign-off when the FINAL GDD already preauthorized the precise delivery action. A blocked deployment must not be reported as a complete release.
