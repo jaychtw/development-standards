@@ -1,30 +1,39 @@
 # Game Development Standards
 
-Central, versioned guidance for **design-first, one-shot AI-assisted games and apps**.
+**Adopted AI-facing standards:** **AICP v2.1.0** and **UGDS v2.0.0** (2026-11-07). They support design-first, one-shot game/app delivery. Use the exact **Git commit SHA** when a project adopts them; a v2 release tag is not yet published. Existing projects pinned to v1 are **not migrated automatically**.
 
-## Proposed v2: one creative decision gate, autonomous delivery
+## How agents work
 
-**Design & Decide → Design Freeze → Build, Verify & Publish.** The owner and ChatGPT resolve foreseeable design choices *before* producing a FINAL GDD. ChatGPT automatically includes the companion Codex execution prompt. Codex then implements, self-corrects, verifies and (when the exact destinations and permissions were preauthorized at freeze) publishes without recurring owner review cycles.
+**Design & Decide → Design Freeze → Build, Verify & Publish.**
 
-- [AICP v2](AI-COLLABORATION-PROTOCOL.md) — one planned approval gate, decision completeness, bounded autonomy, escalation only for real exceptions, safe release and continuity.
-- [UGDS v2](UGDS.md) — release-quality outcomes, proportionate tests, internally verified visual production, no compulsory intermediate owner visual approval.
-- [Final GDD template](templates/GDD-TEMPLATE.md) — no mandatory draft; freezes product and release authorization.
-- [Automatic companion Codex brief](templates/CODEX-BRIEF.md) — one-shot end-to-end execution.
-- [Conversation starter](templates/CONVERSATION-STARTER.md) — use at the beginning of a design-only conversation.
-- [Minimal project state](templates/PROJECT_STATE.md) — optional recovery and verified outcome pointer.
+1. ChatGPT explores all foreseeable consequential decisions with the owner **before** producing the first **FINAL GDD**. Resolve creative choices, exact rules, observable visual goals, technical boundaries, authorized fallback options, quality checks and deployment destinations. Do not demand an exhaustive questionnaire or ask the owner to choose routine technical details.
+2. At **one explicit Design Freeze**, preserve the agreed FINAL GDD **and automatically produce its companion, ready-to-run Codex brief**. Record separate exact authorization for implementation, merging, project release and any Possibility publication, along with visibility and cost bounds.
+3. Codex implements the complete frozen scope, owns intermediate experiments and rework, verifies actual behavior and visuals, safely checkpoints editable sources, and publishes **only** where specifically preauthorized. Interrupt the owner only for truly unresolvable consequential changes or access, safety, privacy, licensing and cost blockers. Never fabricate completion or human visual acceptance.
+4. The artifact's creator transfers the real original/editable source directly to the implementer through authorized durable repository paths when technically possible. The owner should not routinely act as a file courier. Agent-operated standards upkeep can go directly to main when authorized and permitted; do not create a PR just for ritual.
 
-**Important:** This branch proposes **AICP/UGDS 2.0.0**. It is not an adopted baseline merely by existing in a PR. Prior adopted AICP v1.5.0 and UGDS v1.0.0, and the projects pinned to them, do not change automatically. After merge, pin the exact resulting commit/tag for any new adoption and explicitly authorize migration of old projects.
+## Governing documents and templates
 
-## How the boundary works
+- [AICP v2.1.0](AI-COLLABORATION-PROTOCOL.md) — design freeze, AI autonomy, evidence/recovery, artifact custody, adaptive problem-solving, exception-only escalation, permission-bound release, and lean maintenance.
+- [UGDS v2.0.0](UGDS.md) — game functionality, inclusive inputs, proportionate testing, actual visual inspection and honest release proof.
+- [FINAL design/delivery contract](templates/GDD-TEMPLATE.md) — the one frozen specification and explicit release authorization.
+- [One-shot Codex instruction](templates/CODEX-BRIEF.md) — generated automatically with the FINAL GDD.
+- [Conversation starter](templates/CONVERSATION-STARTER.md) — opening instructions for a new design conversation.
+- [Minimal project-state index](templates/PROJECT_STATE.md) — optional recovery/status pointer, not a second specification.
 
-Human decisions happen before freeze: vision, mechanics, aesthetic bar, platforms, scope, fallbacks, budget, source repo and public release destinations. AI decisions happen afterwards: architecture, internal prototypes, assets and integration, test coverage, rework, Git recovery and authorized publishing. Codex must stop only for material, unresolved changes or safety/access/cost constraints; it cannot bypass hosting protections or fabricate verification.
+## Optional technical references (not extra gates)
 
-A project release and a Possibility (https://github.com/jaychtw/jaychtw.github.io) catalog entry are distinct operations, but **both can be authorized upfront** during the same freeze.
+- [Capability Registry](references/CAPABILITY-REGISTRY.md) — small, problem-indexed resource discovery map covering Three.js Game Skills and PixelFX; review upstream instructions, risk, cost, fit and licensing before adopting.
+- [Three.js Game Skills](references/THREEJS-GAME-SKILLS.md) — agent skill selection and transferable real-time implementation/QA techniques.
+- [Runtime identity and cache verification](references/RUNTIME-IDENTITY-AND-CACHE.md) — troubleshooting source/build/ZIP/browser/deployment mismatches when actually relevant.
 
-## Optional agent resources
+References are advisory, may become stale, and never override the frozen project design or grant new permissions. Treat external scripts and instructions as untrusted until assessed.
 
-- [Three.js Game Skills selection guide](references/THREEJS-GAME-SKILLS.md) — optional technical reference. Evaluate fit, license, security, maintainability and $0 constraints; no automatic installation.
+## Source of authority
 
-## Governance
+- The **approved project FINAL GDD** governs product intent and frozen delivery/permissions.
+- The **project's pinned standards commit** governs adopted reusable obligations; upgrades are intentional, not retroactive.
+- **Actual Git code and reproducible evidence** show what exists; don't infer deployment from a branch push, passing CI or a ZIP.
+- **No-cost default**; new spending, unsafe external services, changes to privacy/security or new publication destinations require explicit authorization.
+- **Possibility** (https://github.com/jaychtw/jaychtw.github.io) is a separate repository/release, though permission for it can be frozen alongside the game/app.
 
-Use reviewable versioned changes for standards and preserve prior historical revisions. No silent replacement of old project pins. Prefer removing obsolete obligations to adding exceptions. Protect creative momentum **and** truthful safety/QA evidence; neither requires the owner to operate the agent's internal workflow.
+Historical v1 decisions and past PRs remain available in Git history. The aim is to **preserve creative momentum and quality**, not to reward document quantity, ceremony or test counts.

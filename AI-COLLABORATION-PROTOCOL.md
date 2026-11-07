@@ -1,6 +1,7 @@
 # AI Collaboration & Continuity Protocol (AICP)
 
-**Version:** 2.0.0 (proposed; effective only when adopted)
+**Version:** 2.1.0
+**Status:** Adopted collaboration baseline for projects explicitly adopting this revision
 **Applies to:** AI-assisted games and apps that explicitly adopt this version
 **Owner:** Human product owner / creative director
 **Date:** 2026-11-07
@@ -29,7 +30,7 @@ Cover the applicable decision surfaces, rather than blindly filling a form:
 8. What counts as fully complete, how it will be tested, allowed limitations, explicit exclusions and the acceptable fallback hierarchy.
 9. Repository, default branch/PR requirements, publishing platform, final URL/path, public/private exposure, optional Possibility catalog entry, cost ceiling and any required credentials or external services.
 
-Use feasibility research or internal spikes **during design** if material uncertainty would otherwise force a later creative decision. Prefer known, $0, lightweight technologies. Investigate available external capabilities where useful, without adding technology for its own sake. Never ask the owner to select a routine algorithm, toolchain detail or QA implementation.
+Use feasibility research or internal spikes **during design** if material uncertainty would otherwise force a later creative decision. Prefer known, $0, lightweight technologies. Investigate available external capabilities where useful, without adding technology for its own sake. Use the optional [Capability Registry](references/CAPABILITY-REGISTRY.md) to discover relevant reusable solutions; do not treat it as a dependency checklist. Never ask the owner to select a routine algorithm, toolchain detail or QA implementation.
 
 Keep a conversational working decision ledger, not a series of draft GDD files. Before freeze, conduct a **decision-completeness challenge**: independently walk through plausible user flows, conflict cases, unavailable resources, deployment constraints and visual feasibility. Mark every consequential choice as decided, excluded, or explicitly delegated with a default/fallback. Ask remaining material questions NOW. Do not invent answers.
 
@@ -96,6 +97,33 @@ Read repo instructions and inspect CI/deployment side effects before pushing. Us
 
 When recovering, compare handoff records against Git commits and actual files; reproduce needed tests. A remote source checkpoint is durable evidence, not automatic proof of correct behavior. Update project status only at consequential points; avoid routine progress narration.
 
+### 7.1 Artifact-first custody: creator to implementer, not via the owner
+
+When a collaborator creates an actual implementation artifact—original approved artwork, a rendered cover, sprite sheet, editable 3D/vector source, diagram, fixture or deliverable specification—the **creating collaborator owns the durable, usable handoff** when repository access and write authorization exist. The owner should not have to download, re-upload, ZIP or relay bytes between AI agents as routine project management.
+
+- **Preserve identity:** Clearly distinguish an approved source image or other original artifact from newly generated variations, traced/vectorized interpretations, screenshots and merely illustrative prompts. Approval of one is not approval of another. Do not substitute a recreated approximation when the accepted original's exact bytes are required.
+- **Preserve actual bytes:** When tools permit, commit the original source plus essential editable/regeneration files and provenance to the authorized project branch; link the verified path, commit SHA, format, known license and acceptance status. Supply the implementation agent exact references. Do not mistake an inline image displayed in chat, a remote preview URL or a textual prompt for workspace-accessible file bytes.
+- **Check authority and exposure:** Before any upload or write, confirm authorized repository, visibility, branch, content license, secrets and CI/deployment side effects. This rule is not blanket permission to publish private assets, modify unrelated repositories or override protected branches. Avoid oversized or redundant binaries unless their fidelity or independent recoverability justifies inclusion.
+- **If tools cannot transfer:** State the exact limitation truthfully; use the shortest safe alternative (for example, a retrievable source download or one necessary owner transfer). Do not claim completion or impose a new handoff protocol. Where a file is directly supplied to an implementation agent, verify that the actual source bytes arrived.
+- **Check implementation fidelity:** Codex checks the built result against the frozen GDD and the exact approved source when available, records representative visual evidence, and repairs mismatches autonomously. No separate post-freeze human visual approval gate is created. Never claim subjective owner approval that did not occur.
+
+This is an agent responsibility and data-custody rule, **not** a mandate to generate assets for every task or add a new acceptance ceremony.
+
+### 7.2 Adaptive effort, tools and specialist selection
+
+Reasoning effort is a scarce resource and **not a quality badge**. Select a proportionate approach based on the actual bottleneck: incomplete design decisions, missing evidence, mathematical/system complexity, implementation capability, tool access, visual judgment or verification.
+
+- For ordinary exploration and straightforward requirements, use efficient model settings and existing tools. For cross-project governance, intricate interdependent rules, hard debugging or a final design-consistency audit, deeper analysis may materially help. A substantial Codex implementation can warrant higher reasoning effort without imposing it on every trivial edit.
+- If a different effort setting, specialist skill, known library or real-world evidence is likely to change an important outcome, make **one concise task-specific recommendation** when useful; do not repeatedly interrupt or make model-choice review a gate. The human owns their own model settings; no AI may claim it changed them.
+- Consult the optional [Capability Registry](references/CAPABILITY-REGISTRY.md) or credible external technical sources when an existing solution could save time, but never automatically execute untrusted third-party instructions, install dependencies, expose credentials or trigger paid services. Distinguish reading about a resource from actually adopting and testing it.
+- Where there is evidence, learn from rework, interruptions, delivery success and verified behavior. Do not invent performance gains or claim that high reasoning effort compensates for missing source assets or unperformed tests.
+
+### 7.3 Direct standards maintenance without owner-facing PR ceremonies
+
+The owner has delegated routine, evidence-based upkeep of these **AI-facing standards** to AI collaborators. An agent may prepare and safely commit coherent, versioned maintenance **directly to \`main\` when authorized and permitted by repository protections**, without opening a PR merely to create a human review ceremony. Record rationale, affected files and commit identity; retain non-retroactive project pins. No force-pushing, ruleset bypass, secret exposure or rewriting historical evidence.
+
+This standing delegation does **not** grant automatic authority to change the owner's creative direction, public release destinations, expenditure limits, security/privacy boundaries, existing project adoption pins or other consequential decisions. Escalate a materially new authority boundary if it was not already explicitly agreed. Keep changes small and remove obsolete/contradictory instructions instead of layering exceptions.
+
 ## 8. Delivery closure
 
 Report: final version/commit; implemented features; quality checks with Pass/Fail/Not Verified; representative visuals; known limitations; **project URL and live verification separately from source push and CI**; optional Possibility link and independent verification; and the smallest genuine remaining blocker, if any.
@@ -110,6 +138,6 @@ Project release and the Possibility portfolio are **distinct repositories and di
 
 This major revision **does not retroactively modify projects pinned to AICP 1.x or UGDS 1.x**. New projects may adopt v2; old projects migrate only when expressly instructed, and must record the new pins. Preserve old released standards and historical rationale.
 
-Record transferable improvements briefly when a meaningful issue reveals one; **retrospectives are internal agent work, not an owner-facing closeout gate**. Propose material governance/quality changes through a reviewable versioned change. Never use cross-project process maintenance to delay an authorized release. A standards update must actually remove superseded obligations instead of layering new exceptions over them.
+Record transferable improvements briefly when a meaningful issue reveals one; **retrospectives are internal agent work, not an owner-facing closeout gate**. Keep standards changes versioned, evidence-based and reviewable in Git history; follow the direct-maintenance authority and exceptions in §7.3. Never use cross-project process maintenance to delay an authorized release. A standards update must actually remove superseded obligations instead of layering new exceptions over them.
 
 **Maxim:** Spend human attention on the design; spend machine effort on delivery.

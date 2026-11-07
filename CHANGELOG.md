@@ -1,6 +1,19 @@
 # Changelog
 
-## [AICP 2.0.0 / UGDS 2.0.0 — PROPOSED] - 2026-11-07
+## [AICP 2.1.0 / UGDS 2.0.0 adopted-status cleanup] - 2026-11-07
+
+### Integrated after review of older open PRs
+
+- **PR #7 (partial adaptation):** carried forward artifact-first source custody and adaptive reasoning/tool selection, rewritten for v2's autonomous delivery and without reintroducing post-freeze visual approval or a separate artifact acceptance gate. No retroactive AICP 1.2.2 adoption.
+- **PR #8 (advisory reference):** added runtime identity/cache troubleshooting as an optional recipe. Removed outdated version/gate language; it is not a universal release checklist.
+- **PR #14 (advisory reference):** added a curated capability registry for Three.js Game Skills and PixelFX, preserving reviewed-versus-proven evidence and safe adoption decisions. No automatic plugin, library or paid-service installation.
+- Updated the existing Three.js guide to use v2's one-shot authorization boundaries rather than obsolete Offer, unconditional bilingual or visual approval gates.
+- **Maintenance authority:** allowed direct, versioned and traceable AI-owned updates to \`main\` where the owner has delegated them and repository rules permit. This is not blanket permission for expenditure, privacy/security changes or new public release targets.
+- Harmonized README and headers to show the adopted AICP/UGDS baseline. No v2 Git tag was created by this change; new adopting projects should pin the immutable resulting commit.
+- No change to prior project acceptance/pins, no new deployment, no tests added solely to satisfy an arbitrary count.
+
+
+## [AICP 2.0.0 / UGDS 2.0.0 — ADOPTED] - 2026-11-07
 
 ### Breaking process revision
 
@@ -11,7 +24,7 @@
 - Replaces fixed four-viewport ritual, unconditional bilingual requirement and blanket QA/acceptance matrices with explicit GDD choices and risk-based, outcome-centered checks. EN/zh-TW remains the portfolio recommendation; accessible essential interactions and honest release verification remain mandatory.
 - Retains hard stops for genuine design impossibility, new spending, security/privacy, access, license, safety and unauthorized public release. Protected-branch and host controls cannot be bypassed.
 - Simplifies PROJECT_STATE and all templates; avoids serial human confirmation, redundant records and test-count theater.
-- **Non-retroactive:** v1 projects retain existing pinned requirements until explicitly migrated. This is a reviewable proposal, not an already adopted or tagged release.
+- **Non-retroactive:** v1 projects retain existing pinned requirements until explicitly migrated. PR #15 was merged; no v2 tag is implied. Use immutable commit pins.
 
 
 All notable changes to the Universal Game Development Standard (UGDS) are recorded here. Use semantic versions and pin a release tag or commit SHA in each game project.

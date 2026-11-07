@@ -1,7 +1,7 @@
 # Universal Game Development Standard (UGDS)
 
-**Version:** 2.0.0 (proposed; effective only when adopted)
-**Status:** Risk-proportionate quality baseline for games explicitly adopting v2
+**Version:** 2.0.0
+**Status:** Adopted risk-proportionate quality baseline for games explicitly adopting v2
 **Owner:** Project creative director
 **Date:** 2026-11-07
 

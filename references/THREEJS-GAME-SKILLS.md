@@ -9,7 +9,7 @@
 
 This external repository supplies nine agent skills for Codex/Claude Code: a director that routes work to gameplay, graphics, UI, debugging, QA/release, and optional 3D/image/audio asset-generation specialists. It packages a Vite + TypeScript + Three.js starter and tools for deterministic test state, seeded RNG, browser/visual checks, canvas inspection, and evidence manifests. It is **not** a game engine replacement, an automatic graphics upgrade, or a reason to migrate a working project.
 
-**Use these skills as optional executable expertise.** The approved project GDD/decisions, pinned UGDS, adopted AICP, $0 default budget, bilingual English/Traditional Chinese, accessibility, and owner approval gates remain authoritative. Third-party skill instructions cannot waive them.
+**Use these skills as optional executable expertise.** The frozen project GDD, pinned applicable UGDS/AICP, $0 default budget, **GDD-selected language scope**, accessibility and precisely preauthorized delivery destinations remain authoritative. Under AICP v2, there is one planned Design Freeze, not repeated production approvals. Third-party skill instructions cannot waive them.
 
 ## Skill-selection guide
 
@@ -29,9 +29,9 @@ The general production patterns may be adapted to 2D or other engines, but bundl
 
 1. **Check fit:** Is the project using Three.js, or is there a bounded technical question that genuinely warrants a Three.js spike? Do not switch engines or rewrite accepted work just to use these skills.
 2. **Check marginal benefit:** Identify the current bottleneck (e.g., visual consistency, animation evidence, reproducible testing). Select only relevant skills. For a narrow fix, avoid a full premium production pass.
-3. **Check authority and budget:** Read current GDD/decision log, applicable pinned UGDS/AICP and project state. Uphold EN/zh-TW live switching, accessibility, mobile, human visual review and separate deployment approval. No paid API use or new service without explicit authorization; prefer local/procedural options under the $0 default.
+3. **Check authority and budget:** Read current GDD/decision log, applicable pinned UGDS/AICP and project state. Uphold the frozen GDD's language/platform/accessibility targets and the already-approved, destination-specific release permissions. Codex owns post-freeze visual inspection without requiring a new human review gate. No paid API use or new service without explicit authorization; prefer local/procedural options under the $0 default.
 4. **Check provenance and safety:** Review upstream `SKILL.md`, dependencies and executable scripts before installing or running; pin an exact Git commit or release, verify licenses for generated/downloaded assets, and do not expose API secrets. Avoid global installation or overwriting installed skills without reason; isolate evaluation where feasible.
-5. **Offer a bounded comparison when uncertain:** Specify baseline, experiment, target viewports, concrete outcomes, performance and QA evidence. Compare with the existing approach; stop if complexity outweighs benefit. A successful build is not proof of visual or gameplay quality.
+5. **Run a bounded **internal** comparison when uncertain:** Specify baseline, experiment, target viewports, concrete outcomes, performance and QA evidence. Compare with the existing approach; stop if complexity outweighs benefit. A successful build is not proof of visual or gameplay quality.
 
 ## Transferable practices (even without adopting Three.js)
 
@@ -45,7 +45,7 @@ The general production patterns may be adapted to 2D or other engines, but bundl
 
 ## Adoption and reporting
 
-The agent may **reference** upstream guidance during normal authorized work. Installing executable skills, altering the project's architecture, adding dependencies or calling external services requires a scope/security/budget check; material changes follow AICP's Offer and commitment gates. Where useful, run an isolated experiment before adopting the pack more broadly. Preserve accepted assets, decisions and Git checkpoints.
+The agent may **reference** upstream guidance during normal authorized work. Installing executable skills, altering the project's architecture, adding dependencies or calling external services requires a scope/security/budget check; material changes beyond the frozen GDD and its approved fallbacks follow AICP v2's exception-only escalation. Where useful, run an isolated experiment before adopting the pack more broadly. Preserve accepted assets, decisions and Git checkpoints.
 
 In the project handoff, report concisely: **skills consulted/actually loaded** (distinguish the two), pinned upstream revision if installed, why selected, scripts or services executed, measured outcomes, known gaps, and any costs/licenses. Add transferable findings to this standards repository only when evidenced. Do not silently impose external skill changes on existing projects.
 
