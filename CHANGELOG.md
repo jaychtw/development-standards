@@ -1,5 +1,13 @@
 # Changelog
 
+## [AICP 2.1.1 — Portfolio stewardship clarification] - 2026-11-07
+
+- Clarified that project-specific ChatGPT/Codex agents produce evidence and may suggest reusable improvements, but **do not automatically modify shared standards** based on one project's perspective.
+- Portfolio-level standards integration now requires proportionate cross-project consideration of affected designs, conflicting obligations, evidence strength and potential owner-facing friction before promoting a universal rule.
+- Preserved the owner's standing authorization for direct-to-main, traceable, versioned maintenance **by a portfolio-level integrator** when repository protection permits, without adding a human PR review ceremony.
+- Lightweight local lessons remain optional and do not delay a frozen, authorized project release. No migration of older project pins, new QA gate or recurring owner action.
+
+
 ## [AICP 2.1.0 / UGDS 2.0.0 adopted-status cleanup] - 2026-11-07
 
 ### Integrated after review of older open PRs
@@ -8,7 +16,7 @@
 - **PR #8 (advisory reference):** added runtime identity/cache troubleshooting as an optional recipe. Removed outdated version/gate language; it is not a universal release checklist.
 - **PR #14 (advisory reference):** added a curated capability registry for Three.js Game Skills and PixelFX, preserving reviewed-versus-proven evidence and safe adoption decisions. No automatic plugin, library or paid-service installation.
 - Updated the existing Three.js guide to use v2's one-shot authorization boundaries rather than obsolete Offer, unconditional bilingual or visual approval gates.
-- **Maintenance authority:** allowed direct, versioned and traceable AI-owned updates to \`main\` where the owner has delegated them and repository rules permit. This is not blanket permission for expenditure, privacy/security changes or new public release targets.
+- **Maintenance authority:** allowed direct, versioned and traceable AI-owned updates to `main` where the owner has delegated them and repository rules permit. This is not blanket permission for expenditure, privacy/security changes or new public release targets.
 - Harmonized README and headers to show the adopted AICP/UGDS baseline. No v2 Git tag was created by this change; new adopting projects should pin the immutable resulting commit.
 - No change to prior project acceptance/pins, no new deployment, no tests added solely to satisfy an arbitrary count.
 

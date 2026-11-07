@@ -1,6 +1,6 @@
 # AI Collaboration & Continuity Protocol (AICP)
 
-**Version:** 2.1.0
+**Version:** 2.1.1
 **Status:** Adopted collaboration baseline for projects explicitly adopting this revision
 **Applies to:** AI-assisted games and apps that explicitly adopt this version
 **Owner:** Human product owner / creative director
@@ -118,11 +118,17 @@ Reasoning effort is a scarce resource and **not a quality badge**. Select a prop
 - Consult the optional [Capability Registry](references/CAPABILITY-REGISTRY.md) or credible external technical sources when an existing solution could save time, but never automatically execute untrusted third-party instructions, install dependencies, expose credentials or trigger paid services. Distinguish reading about a resource from actually adopting and testing it.
 - Where there is evidence, learn from rework, interruptions, delivery success and verified behavior. Do not invent performance gains or claim that high reasoning effort compensates for missing source assets or unperformed tests.
 
-### 7.3 Direct standards maintenance without owner-facing PR ceremonies
+### 7.3 Portfolio stewardship: local evidence, global authority
 
-The owner has delegated routine, evidence-based upkeep of these **AI-facing standards** to AI collaborators. An agent may prepare and safely commit coherent, versioned maintenance **directly to \`main\` when authorized and permitted by repository protections**, without opening a PR merely to create a human review ceremony. Record rationale, affected files and commit identity; retain non-retroactive project pins. No force-pushing, ruleset bypass, secret exposure or rewriting historical evidence.
+**Individual project agents are contributors, not automatic maintainers of portfolio-wide policy.** A game/app agent is closest to its own incidents, capabilities and design constraints, but that local perspective cannot establish that a rule will benefit unrelated projects.
 
-This standing delegation does **not** grant automatic authority to change the owner's creative direction, public release destinations, expenditure limits, security/privacy boundaries, existing project adoption pins or other consequential decisions. Escalate a materially new authority boundary if it was not already explicitly agreed. Keep changes small and remove obsolete/contradictory instructions instead of layering exceptions.
+- **At the project boundary:** Fix the project's problems within its frozen scope. Record only consequential, reproducible lessons in its repository or concise final report; link evidence and note when a lesson may be transferable. No requirement to create a separate retrospective, standards proposal or PR at every closure. An agent may mention a candidate cross-project improvement but must not silently promote it to AICP/UGDS or modify the shared repository just because it finished a project.
+- **At the portfolio boundary:** A ChatGPT instance explicitly acting as a **portfolio-level standards integrator** (rather than simply acting on one project's local experience) may synthesize proposed lessons. Before editing shared obligations, inspect the current governing standards, applicable templates, recent related changes, and a representative range of affected projects **proportionate to the decision**. Test whether the proposal solves a recurring or material problem; identify conflicting requirements, overgeneralization, new owner interruptions, preservation of design/quality boundaries and costs imposed on unaffected projects.
+- **Promote by demonstrated benefit:** Prefer a narrowly scoped optional technical reference for a specialized tactic. Change a mandatory universal rule only when cross-project benefits or risk justify it. Retire superseded requirements instead of accumulating overlapping gates. If evidence is not yet sufficient, leave the proposal local or advisory; do not manufacture portfolio consensus.
+- **Direct maintenance, not PR ceremony:** For owner-delegated, evidence-based updates within existing authority, the portfolio integrator may safely commit versioned changes **directly to `main`** when repository protections permit. Document rationale and exact commit, preserve old revisions/pins, and never force-push or bypass settings. Typo or broken-link fixes need no expansive audit. This permission is **not** delegated automatically to every project agent.
+- **Authority boundaries:** Neither portfolio stewardship nor direct-to-main permission authorizes new spending, public destinations, invasive data handling, reduced security, unapproved material creative changes or silent retroactive migration of pinned projects. Escalate only a genuinely new consequential owner choice.
+
+**Operational goal:** One cross-project perspective for shared rules; many independent local sources of evidence. No standing committee, scheduled ceremony, centralized human bottleneck, or requirement to update standards after every project.
 
 ## 8. Delivery closure
 
@@ -138,6 +144,6 @@ Project release and the Possibility portfolio are **distinct repositories and di
 
 This major revision **does not retroactively modify projects pinned to AICP 1.x or UGDS 1.x**. New projects may adopt v2; old projects migrate only when expressly instructed, and must record the new pins. Preserve old released standards and historical rationale.
 
-Record transferable improvements briefly when a meaningful issue reveals one; **retrospectives are internal agent work, not an owner-facing closeout gate**. Keep standards changes versioned, evidence-based and reviewable in Git history; follow the direct-maintenance authority and exceptions in §7.3. Never use cross-project process maintenance to delay an authorized release. A standards update must actually remove superseded obligations instead of layering new exceptions over them.
+Project agents may preserve concise, evidence-backed lessons locally; **retrospectives are internal agent work, not an owner-facing closeout gate**. A portfolio-level integrator decides whether to promote them under §7.3 after reconciling cross-project applicability. Keep standards changes versioned, evidence-based and reviewable in Git history. Never use cross-project process maintenance to delay an authorized release. A standards update must actually remove superseded obligations instead of layering new exceptions over them.
 
 **Maxim:** Spend human attention on the design; spend machine effort on delivery.

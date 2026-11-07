@@ -1,6 +1,6 @@
 # Game Development Standards
 
-**Adopted AI-facing standards:** **AICP v2.1.0** and **UGDS v2.0.0** (2026-11-07). They support design-first, one-shot game/app delivery. Use the exact **Git commit SHA** when a project adopts them; a v2 release tag is not yet published. Existing projects pinned to v1 are **not migrated automatically**.
+**Adopted AI-facing standards:** **AICP v2.1.1** and **UGDS v2.0.0** (2026-11-07). They support design-first, one-shot game/app delivery. Use the exact **Git commit SHA** when a project adopts them; a v2 release tag is not yet published. Existing projects pinned to v1 are **not migrated automatically**.
 
 ## How agents work
 
@@ -9,11 +9,11 @@
 1. ChatGPT explores all foreseeable consequential decisions with the owner **before** producing the first **FINAL GDD**. Resolve creative choices, exact rules, observable visual goals, technical boundaries, authorized fallback options, quality checks and deployment destinations. Do not demand an exhaustive questionnaire or ask the owner to choose routine technical details.
 2. At **one explicit Design Freeze**, preserve the agreed FINAL GDD **and automatically produce its companion, ready-to-run Codex brief**. Record separate exact authorization for implementation, merging, project release and any Possibility publication, along with visibility and cost bounds.
 3. Codex implements the complete frozen scope, owns intermediate experiments and rework, verifies actual behavior and visuals, safely checkpoints editable sources, and publishes **only** where specifically preauthorized. Interrupt the owner only for truly unresolvable consequential changes or access, safety, privacy, licensing and cost blockers. Never fabricate completion or human visual acceptance.
-4. The artifact's creator transfers the real original/editable source directly to the implementer through authorized durable repository paths when technically possible. The owner should not routinely act as a file courier. Agent-operated standards upkeep can go directly to main when authorized and permitted; do not create a PR just for ritual.
+4. The artifact's creator transfers the real original/editable source directly to the implementer through authorized durable repository paths when technically possible. The owner should not routinely act as a file courier. Project agents preserve relevant lessons locally; a portfolio-level standards integrator reconciles cross-project consequences before changing shared rules. Authorized, versioned maintenance may go directly to main when protections permit; do not create a PR just for ritual.
 
 ## Governing documents and templates
 
-- [AICP v2.1.0](AI-COLLABORATION-PROTOCOL.md) — design freeze, AI autonomy, evidence/recovery, artifact custody, adaptive problem-solving, exception-only escalation, permission-bound release, and lean maintenance.
+- [AICP v2.1.1](AI-COLLABORATION-PROTOCOL.md) — design freeze, AI autonomy, evidence/recovery, artifact custody, adaptive problem-solving, exception-only escalation, permission-bound release, and lean maintenance.
 - [UGDS v2.0.0](UGDS.md) — game functionality, inclusive inputs, proportionate testing, actual visual inspection and honest release proof.
 - [FINAL design/delivery contract](templates/GDD-TEMPLATE.md) — the one frozen specification and explicit release authorization.
 - [One-shot Codex instruction](templates/CODEX-BRIEF.md) — generated automatically with the FINAL GDD.
