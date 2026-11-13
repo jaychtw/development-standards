@@ -22,7 +22,8 @@
 
 ## Optional technical references (not extra gates)
 
-- [Capability Registry](references/CAPABILITY-REGISTRY.md) — small, problem-indexed resource discovery map covering Three.js Game Skills and PixelFX; review upstream instructions, risk, cost, fit and licensing before adopting.
+- [Capability Registry](references/CAPABILITY-REGISTRY.md) — small, problem-indexed resource discovery map covering Three.js Game Skills, Diorama and PixelFX; review upstream instructions, risk, cost, fit and licensing before adopting.
+- [Diorama scene and animation playbook](references/DIORAMA-THREEJS.md) — optional procedural 3D scene, rigging, water and frame-level visual QA techniques.
 - [Three.js Game Skills](references/THREEJS-GAME-SKILLS.md) — agent skill selection and transferable real-time implementation/QA techniques.
 - [Runtime identity and cache verification](references/RUNTIME-IDENTITY-AND-CACHE.md) — troubleshooting source/build/ZIP/browser/deployment mismatches when actually relevant.
 
