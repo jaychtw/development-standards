@@ -1,149 +1,45 @@
 # AI Collaboration & Continuity Protocol (AICP)
 
-**Version:** 2.1.1
-**Status:** Adopted collaboration baseline for projects explicitly adopting this revision
-**Applies to:** AI-assisted games and apps that explicitly adopt this version
-**Owner:** Human product owner / creative director
-**Date:** 2026-11-07
+**Version 3.0.0 · Adopted 2026-11-25 · Games and apps**
 
-## 1. Mission: protect creative momentum
+## 1. Follow the request
 
-The owner enjoys conceiving and fully designing experiences, not repeatedly managing implementation. The normal lifecycle is **Design & Decide → Design Freeze → Build, Verify & Publish**. Design Freeze is the single planned human commitment gate. Everything after it is an autonomous, bounded implementation assignment. Successful delivery is reported, not submitted for another routine approval ceremony.
+The owner directs the experience, audience, exclusions, budget and exposure. One assistant can discuss the design, edit the repository, test the result and deliver it in the same conversation. Choose tools and reasoning effort to suit the task. The protocol assumes no particular model or interface.
 
-This is an operating contract, not a guarantee that technically impossible work will become possible. Agents must neither conceal blockers nor claim unverified success. Legal, safety, platform, security, privacy, budget and repository access restrictions always apply.
+An exploratory question calls for discussion. An instruction to build, fix or revise authorizes work within its stated scope. “Go for it” after a concrete proposal can authorize that proposal. Read it in context. For existing work, inspect the current files, adopted standards, relevant history and repository instructions before relying on memory. Use a supplied specification, asset or implementation as the starting point.
 
-**One decision, one owner:** The owner controls intended experience, exclusions, quality bar, spend, exposure and destinations. ChatGPT is responsible for exhausting foreseeable design questions before freeze. Codex controls implementation methods, intermediate sequencing, repair and testing. GitHub stores the durable, verifiable record. Neither agent may substitute remembered conversation summaries for authoritative project sources.
+## 2. Decide what matters
 
-## 2. Design & Decide: the only routine clarification window
+For a new experience, establish the main user journey, the choices that give it character and what the owner expects to see or do when it works. Identify consequential unknowns about content, art, inputs, languages, data, accessibility or feasibility. Explore alternatives while the owner is designing. Once the requested change is clear, choose reversible implementation details and proceed. Ask one focused question when the answer would materially change the outcome and existing decisions provide no answer.
 
-During exploration ChatGPT should be a rigorous creative partner. Ask as many substantive questions as needed, grouped in manageable rounds; offer comparisons and recommendations; challenge underspecified, contradictory or likely expensive requirements; and **insist on a choice** when a decision would otherwise be pushed to implementation. Do not treat silence as informed approval.
+A repair can be scoped by the reported behavior and the expected result. A prototype can be scoped by the question it must answer. For a larger build, keep interdependent rules, approved references, fallbacks and acceptance examples together in a project specification. Use a formal Design Freeze when the owner requests it or chooses to adopt a fixed baseline. Record a FINAL design only after agreement. A direct build can proceed from the request or existing specification without creating a GDD or a second prompt.
 
-Cover the applicable decision surfaces, rather than blindly filling a form:
+## 3. Build and iterate
 
-1. Concept, audience, differentiation, emotional goal, references and non-goals.
-2. Entire user journey or gameplay loop, onboarding, completion, failure, restart and edge cases.
-3. Mechanics, entities, state transitions, numbers, timing, physics, randomness, difficulty, content quantity and end conditions.
-4. Visual identity, asset references, layout, camera, animation, effects, sound and the observable quality bar.
-5. Platforms, browser and device input, touch, screen sizes, accessibility and language/localization.
-6. Data, persistence, offline/network behavior, permissions, privacy, security and third-party licenses.
-7. Architecture constraints and **feasibility research that materially affects creative choices**, including risky assets or dependencies.
-8. What counts as fully complete, how it will be tested, allowed limitations, explicit exclusions and the acceptable fallback hierarchy.
-9. Repository, default branch/PR requirements, publishing platform, final URL/path, public/private exposure, optional Possibility catalog entry, cost ceiling and any required credentials or external services.
+Implement the authorized change through the real entry point. Preserve existing modules, routes, saved data and behavior outside the change. Use internal prototypes to resolve uncertainty. Give the owner a preview when the request calls for a judgment about feel, look or direction. When feedback arrives, apply it to the current build and rerun the affected checks. Record material revisions to an agreed baseline so a later session can tell which decision superseded which.
 
-Use feasibility research or internal spikes **during design** if material uncertainty would otherwise force a later creative decision. Prefer known, $0, lightweight technologies. Investigate available external capabilities where useful, without adding technology for its own sake. Use the optional [Capability Registry](references/CAPABILITY-REGISTRY.md) to discover relevant reusable solutions; do not treat it as a dependency checklist. Never ask the owner to select a routine algorithm, toolchain detail or QA implementation.
+If an approach fails, repair it, use an agreed fallback or choose an equivalent implementation. Escalate before sacrificing a defining feature, spending beyond the approved ceiling ($0 by default), exposing private data, changing license terms or taking an unauthorized destructive or public action. Explain the blocked choice and its consequences. Continue independent authorized work.
 
-Keep a conversational working decision ledger, not a series of draft GDD files. Before freeze, conduct a **decision-completeness challenge**: independently walk through plausible user flows, conflict cases, unavailable resources, deployment constraints and visual feasibility. Mark every consequential choice as decided, excluded, or explicitly delegated with a default/fallback. Ask remaining material questions NOW. Do not invent answers.
+## 4. Preserve sources and continuity
 
-## 3. Design Freeze Contract: one explicit authorization
+Inspect branch rules and deployment triggers before writing. Use authorized branches and meaningful remote checkpoints for long-running work. Preserve exact accepted asset bytes, editable sources, provenance and reproducible build inputs at authorized locations. Verify that the running product uses the accepted asset. If only a preview is accessible and fidelity depends on the original, identify the missing file.
 
-Create the **first and only baseline GDD as FINAL** after the owner agrees to freeze the resolved design. There is no mandatory draft-GDD/POC-approval phase. An authorized future change is an explicit new revision, never a silent reinterpretation of the frozen baseline. No agent may freeze unresolved material owner choices unilaterally.
+After an interruption, reconcile the current branch, commit, files, owner decisions and outstanding checks. Rerun checks where the state has changed. An optional [state index](templates/PROJECT_STATE.md) can point to this evidence. Create a [handoff brief](templates/CODEX-BRIEF.md) only for a real transfer or at the owner's request. Include what the recipient needs to resume without asking the owner to relay artifacts or restate decisions. Keep secrets and private conversation text out of public repositories.
 
-The final GDD must specify, in one coherent authority:
+## 5. Verify the experience
 
-- Experience and exact functional/content/visual requirements; non-goals; representative examples; deterministic rules and edge behavior where needed.
-- Technical constraints and delegated technical decisions; dependencies, provenance/license limits and safe fallback order.
-- Acceptance scenarios, objective functional and visual criteria, accessibility/language/device targets, and minimum evidence.
-- **Delivery authorization matrix:** repository and branch/merge rules; specific target hosting/environment and intended public visibility; CI use; whether full implementation, merge, release and live deployment are preauthorized; whether a separate Possibility edit and deployment are preauthorized; $0 or another exact spend ceiling; explicit prohibited actions.
-- Hard-stop conditions, owner escalation thresholds, security/privacy limitations and intended behavior if a destination is inaccessible.
+Use the project's acceptance criteria and applicable [UGDS](UGDS.md). For a repair, reproduce the reported symptom where possible and exercise the corrected path plus nearby behavior at risk. For a release, run the production build where applicable, exercise a meaningful success and failure/recovery path, and check declared languages, input methods, accessibility and layouts. Inspect the running visuals against the agreed references. A loading screen, successful build or HTTP response alone cannot establish that a game plays.
 
-**Advance release authorization is valid:** If the owner explicitly approves implementation **and the exact release destinations/visibility/actions** at Design Freeze, Codex may carry them out after checks pass without requesting a second approval merely because execution finished. Permission to publish project A does NOT imply permission to change project B, including Possibility. Existing repository branch protections, review requirements, external services and platform controls still govern; the agent may not bypass them.
+Repair failures and repeat the relevant check. Distinguish passed, failed, unverified and inapplicable checks. Identify any release-critical gap and obtain an explicit scoped exception before releasing with it. Attribute personal visual approval only to someone who actually reviewed the result.
 
-ChatGPT must automatically produce a **companion, ready-to-run Codex instruction** in the same final handoff as the GDD; the owner should never have to request it separately. Place both in the project repository where access allows. If direct Codex execution is unavailable, provide a ready-to-paste prompt and say that launch is the one remaining manual handoff. An instruction to create a final GDD does not itself constitute permission to publish unspecified public sites.
+## 6. Publish within the owner's authorization
 
-**Freeze acceptance = authorization of criteria and bounded execution, not a fiction that future screenshots have already been reviewed.** Final evidence must never be labeled "owner visually approved" unless actually inspected and approved.
+Track repository writes, merge, project deployment and portal publication independently. Authorization can arrive upfront or later in the same conversation. Carry it forward with the exact destination, visibility and scope. Respect branch protections, hosting controls, licensing, privacy and spend limits. If a push would automatically publish outside the authorization, use a safe branch.
 
-## 4. One-shot autonomous implementation
+For an authorized project release, verify the deployed route and a representative action. For a catalog request, use the named portal and section, follow its current localization and artwork conventions, and verify the live card opens the intended project. Jolly Chubby Studio is the public studio portal. Possibility is a separate destination. Naming one grants no authority over the other.
 
-After freeze, Codex owns the complete work cycle:
+Close with the source revision, what works, checks performed, material limitations and each requested publication result. Report a blocked deployment separately from completed implementation.
 
-1. Verify current project GDD, applicable pinned standards, repository access, hosting permissions, baseline and environmental constraints. Do not ask the owner to repeat available context.
-2. Plan privately and implement **the complete release**, not an endless sequence of owner-facing exploratory milestones. Use internal prototypes/spikes if useful; they are not human approval gates.
-3. Build assets, code, tests and packaging; inspect actual rendered/gameplay behavior; repair defects and repeat checks as needed. Prefer known solutions and suitably licensed reusable components.
-4. Safely checkpoint to Git, preserve editable sources and reproducibility, and resume from verified remote state if a workspace fails.
-5. If preauthorized, publish to the designated target only after all applicable hard release checks pass, then verify the public URL and representative interaction. Process an independently preauthorized Possibility entry afterwards, if applicable.
-6. Report one concise outcome with authoritative links, verified tests, deviations, release status and blocking limitations.
+## 7. Maintain shared standards
 
-**No routine post-freeze questions** about mechanic details, art direction, implementation preference, intermediate POCs, test counts, safe branch pushes, minor bug fixes, or acceptance of work that demonstrably meets frozen criteria.
-
-Use this resolution order for unexpected implementation problems: (a) fix within GDD; (b) use an explicitly approved fallback; (c) substitute a technically equivalent implementation preserving observable behavior and the agreed quality bar; (d) isolate the blocker and continue independent work. Never shrink required content, silently weaken quality or invent creative policy. A true creative tradeoff beyond the authorized fallback is a hard stop for the affected feature.
-
-## 5. Risk-proportionate quality, not test-count theater
-
-Quality is mandatory; **repeated approval ceremonies and arbitrary test-count targets are not**. The adopted UGDS governs games; apps apply only relevant adopted requirements. For the final deliverable, verify actual target behavior, one meaningful success and failure/recovery path, real browser/device input where relevant, visual composition against the GDD, localization/accessibility as specified, production build, regressions near touched logic, and release integrity. Scale coverage to actual failure risk, not an impressive number of browser groups or a fixed viewport matrix.
-
-Automated accessibility audits are supporting evidence, not a substitute for usability or aesthetic judgment. Code passing tests does not prove visual satisfaction. Codex must self-inspect representative real renders/screenshots and report whether they match each **observable** visual criterion. Unperformed physical-device, first-time-player or subjective human reviews must be marked unverified—not silently counted as passed and not automatically inserted as additional launch gates unless the GDD makes them mandatory.
-
-If a mandatory criterion fails, repair and retest. Never ship a materially nonconforming build just to complete the cycle. An authorized acceptance exception must be explicit, not inferred.
-
-## 6. Exception-only escalation and authority
-
-A post-freeze owner interruption is justified **only** when all reasonable in-scope resolutions fail and at least one applies:
-
-- A material creative/functional requirement or agreed quality bar must change.
-- The requested result is technically infeasible under approved constraints and approved fallbacks are exhausted.
-- New expenditure, paid overages, unapproved service/account, external data transfer, licensing exposure, material privacy/security risk or irreversible destructive operation is required.
-- Required credentials, permissions, repository protection, publishing rights, regulatory obligations or an external dependency prevent authorized delivery.
-- An unapproved standards exception or new public destination is necessary.
-
-The agent must first narrow the issue, preserve the remaining work and explain **one concrete decision with options and a recommended safe default**, rather than reverting to broad discovery. Do not bypass access gates, purchase access, weaken security, force-push or quietly deploy somewhere else. Human silence is not consent. When one operation is blocked, continue independent authorized tasks and report the exact incomplete state.
-
-A frozen scope does not prevent the owner from voluntarily changing their mind later. It prevents AI from **requiring** an ordinary owner redesign after every iteration.
-
-## 7. Git, evidence and lightweight continuity
-
-Use one canonical FINAL GDD, one companion Codex brief/assignment, and Git source/tests as authoritative records. An optional short PROJECT_STATE snapshot can index repo, baseline commit, current work branch, last verified pushed checkpoint, release status and blocker. Do not create duplicate decisions, lengthy offer reports, redundant ZIPs or new ADRs without a distinct need.
-
-Read repo instructions and inspect CI/deployment side effects before pushing. Use a safe working branch, push meaningful intermediate checkpoints when work is long-running or asset-heavy, then push the verified final commit. Honor protection and non-destructive merge rules; never imply branch push equals deployment. If the owner preauthorized merging/publishing and policies allow it, finish the sequence autonomously. Otherwise provide the ready PR or precise blocker. Avoid storing secrets or private conversations in the repo.
-
-When recovering, compare handoff records against Git commits and actual files; reproduce needed tests. A remote source checkpoint is durable evidence, not automatic proof of correct behavior. Update project status only at consequential points; avoid routine progress narration.
-
-### 7.1 Artifact-first custody: creator to implementer, not via the owner
-
-When a collaborator creates an actual implementation artifact—original approved artwork, a rendered cover, sprite sheet, editable 3D/vector source, diagram, fixture or deliverable specification—the **creating collaborator owns the durable, usable handoff** when repository access and write authorization exist. The owner should not have to download, re-upload, ZIP or relay bytes between AI agents as routine project management.
-
-- **Preserve identity:** Clearly distinguish an approved source image or other original artifact from newly generated variations, traced/vectorized interpretations, screenshots and merely illustrative prompts. Approval of one is not approval of another. Do not substitute a recreated approximation when the accepted original's exact bytes are required.
-- **Preserve actual bytes:** When tools permit, commit the original source plus essential editable/regeneration files and provenance to the authorized project branch; link the verified path, commit SHA, format, known license and acceptance status. Supply the implementation agent exact references. Do not mistake an inline image displayed in chat, a remote preview URL or a textual prompt for workspace-accessible file bytes.
-- **Check authority and exposure:** Before any upload or write, confirm authorized repository, visibility, branch, content license, secrets and CI/deployment side effects. This rule is not blanket permission to publish private assets, modify unrelated repositories or override protected branches. Avoid oversized or redundant binaries unless their fidelity or independent recoverability justifies inclusion.
-- **If tools cannot transfer:** State the exact limitation truthfully; use the shortest safe alternative (for example, a retrievable source download or one necessary owner transfer). Do not claim completion or impose a new handoff protocol. Where a file is directly supplied to an implementation agent, verify that the actual source bytes arrived.
-- **Check implementation fidelity:** Codex checks the built result against the frozen GDD and the exact approved source when available, records representative visual evidence, and repairs mismatches autonomously. No separate post-freeze human visual approval gate is created. Never claim subjective owner approval that did not occur.
-
-This is an agent responsibility and data-custody rule, **not** a mandate to generate assets for every task or add a new acceptance ceremony.
-
-### 7.2 Adaptive effort, tools and specialist selection
-
-Reasoning effort is a scarce resource and **not a quality badge**. Select a proportionate approach based on the actual bottleneck: incomplete design decisions, missing evidence, mathematical/system complexity, implementation capability, tool access, visual judgment or verification.
-
-- For ordinary exploration and straightforward requirements, use efficient model settings and existing tools. For cross-project governance, intricate interdependent rules, hard debugging or a final design-consistency audit, deeper analysis may materially help. A substantial Codex implementation can warrant higher reasoning effort without imposing it on every trivial edit.
-- If a different effort setting, specialist skill, known library or real-world evidence is likely to change an important outcome, make **one concise task-specific recommendation** when useful; do not repeatedly interrupt or make model-choice review a gate. The human owns their own model settings; no AI may claim it changed them.
-- Consult the optional [Capability Registry](references/CAPABILITY-REGISTRY.md) or credible external technical sources when an existing solution could save time, but never automatically execute untrusted third-party instructions, install dependencies, expose credentials or trigger paid services. Distinguish reading about a resource from actually adopting and testing it.
-- Where there is evidence, learn from rework, interruptions, delivery success and verified behavior. Do not invent performance gains or claim that high reasoning effort compensates for missing source assets or unperformed tests.
-
-### 7.3 Portfolio stewardship: local evidence, global authority
-
-**Individual project agents are contributors, not automatic maintainers of portfolio-wide policy.** A game/app agent is closest to its own incidents, capabilities and design constraints, but that local perspective cannot establish that a rule will benefit unrelated projects.
-
-- **At the project boundary:** Fix the project's problems within its frozen scope. Record only consequential, reproducible lessons in its repository or concise final report; link evidence and note when a lesson may be transferable. No requirement to create a separate retrospective, standards proposal or PR at every closure. An agent may mention a candidate cross-project improvement but must not silently promote it to AICP/UGDS or modify the shared repository just because it finished a project.
-- **At the portfolio boundary:** A ChatGPT instance explicitly acting as a **portfolio-level standards integrator** (rather than simply acting on one project's local experience) may synthesize proposed lessons. Before editing shared obligations, inspect the current governing standards, applicable templates, recent related changes, and a representative range of affected projects **proportionate to the decision**. Test whether the proposal solves a recurring or material problem; identify conflicting requirements, overgeneralization, new owner interruptions, preservation of design/quality boundaries and costs imposed on unaffected projects.
-- **Promote by demonstrated benefit:** Prefer a narrowly scoped optional technical reference for a specialized tactic. Change a mandatory universal rule only when cross-project benefits or risk justify it. Retire superseded requirements instead of accumulating overlapping gates. If evidence is not yet sufficient, leave the proposal local or advisory; do not manufacture portfolio consensus.
-- **Direct maintenance, not PR ceremony:** For owner-delegated, evidence-based updates within existing authority, the portfolio integrator may safely commit versioned changes **directly to `main`** when repository protections permit. Document rationale and exact commit, preserve old revisions/pins, and never force-push or bypass settings. Typo or broken-link fixes need no expansive audit. This permission is **not** delegated automatically to every project agent.
-- **Authority boundaries:** Neither portfolio stewardship nor direct-to-main permission authorizes new spending, public destinations, invasive data handling, reduced security, unapproved material creative changes or silent retroactive migration of pinned projects. Escalate only a genuinely new consequential owner choice.
-
-**Operational goal:** One cross-project perspective for shared rules; many independent local sources of evidence. No standing committee, scheduled ceremony, centralized human bottleneck, or requirement to update standards after every project.
-
-## 8. Delivery closure
-
-Report: final version/commit; implemented features; quality checks with Pass/Fail/Not Verified; representative visuals; known limitations; **project URL and live verification separately from source push and CI**; optional Possibility link and independent verification; and the smallest genuine remaining blocker, if any.
-
-A delivery that satisfies the frozen, preauthorized release criteria is **complete without a second ceremonial owner sign-off**. It does not claim that the owner personally reviewed the finished experience. A blocked or partial delivery must be labeled blocked/partial, not "done." Do not force further improvements or ask the owner to start another phase merely because future polish is conceivable.
-
-## 9. Portfolio publication
-
-Project release and the Possibility portfolio are **distinct repositories and distinct operations**, but both may be explicitly authorized at the same Design Freeze. If permitted, Codex verifies the project live, consults the current Possibility catalog contract, creates/updates only the correct entry with accurate links, approved/fallback assets and required localization, runs targeted checks, publishes under the portal's own policies and verifies the public card. Never assume a project deployment automatically grants permission for a portal edit. Never invent owner-approved artwork or rewrite unrelated portal design. If permission or portal access is absent, report that independent step as blocked/deferred, without reopening the finished project.
-
-## 10. Standards, learning and adoption
-
-This major revision **does not retroactively modify projects pinned to AICP 1.x or UGDS 1.x**. New projects may adopt v2; old projects migrate only when expressly instructed, and must record the new pins. Preserve old released standards and historical rationale.
-
-Project agents may preserve concise, evidence-backed lessons locally; **retrospectives are internal agent work, not an owner-facing closeout gate**. A portfolio-level integrator decides whether to promote them under §7.3 after reconciling cross-project applicability. Keep standards changes versioned, evidence-based and reviewable in Git history. Never use cross-project process maintenance to delay an authorized release. A standards update must actually remove superseded obligations instead of layering new exceptions over them.
-
-**Maxim:** Spend human attention on the design; spend machine effort on delivery.
+A project can preserve a reproducible lesson locally. When the owner delegates portfolio-wide maintenance, evaluate that lesson against the current standards, templates and affected project types. Prefer advisory references for specialized techniques. Version changes to shared obligations, explain adoption in the changelog and preserve existing project pins. Authorized standards maintenance may go directly to main when repository rules permit.

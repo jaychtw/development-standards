@@ -1,5 +1,12 @@
 # Changelog
 
+## [AICP 3.0.0 / UGDS 2.1.0] - 2026-11-25
+
+- Adopt direct collaboration for exploration, implementation, feedback and verification in the same conversation. A clear build request can authorize implementation without a formal freeze or companion prompt.
+- Keep a design contract for projects that benefit from a fixed baseline and a portable brief for actual transfers. Preserve template paths for existing links.
+- Adapt game quality checks to existing products and bounded changes. Preserve release-quality requirements, exact asset custody, recovery and destination-specific authorization.
+- Distinguish Jolly Chubby Studio and Possibility when publishing. Existing projects keep their pinned standards until intentionally migrated.
+
 ## [AICP 2.1.1 — Portfolio stewardship clarification] - 2026-11-07
 
 - Clarified that project-specific ChatGPT/Codex agents produce evidence and may suggest reusable improvements, but **do not automatically modify shared standards** based on one project's perspective.

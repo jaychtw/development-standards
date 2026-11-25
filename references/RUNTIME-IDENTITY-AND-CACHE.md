@@ -22,4 +22,4 @@ Confirm the frozen package exists, its expected bytes match and actual controls 
 - [Shadow Becomes Me controlled-input and same-profile update investigation](https://github.com/jaychtw/shadow-becomes-me/blob/5e26b0c4b521186114d1041a98ccaa3b0cfe7f8d/docs/PLAYTEST_ROUND3.md)
 - [Independent public hash and input checks](https://github.com/jaychtw/shadow-becomes-me/tree/ce747118e546c13854b1137270f638e0b2a038a7/evidence/publication/live)
 
-The exact root cause of the earlier reported owner cache incident was **not confirmed**. These examples demonstrate possible verification techniques, not a universal caching flaw. For routine releases use the frozen GDD's proportionate QA and AICP v2's honest release verification; **do not run this expanded procedure unless revision/cache ambiguity warrants it**.
+The exact root cause of the earlier reported owner cache incident was **not confirmed**. These examples demonstrate possible verification techniques, not a universal caching flaw. For routine releases use the project's agreed checks and AICP's release verification; **do not run this expanded procedure unless revision/cache ambiguity warrants it**.

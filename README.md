@@ -1,40 +1,26 @@
-# Game Development Standards
+# Development Standards
 
-**Adopted AI-facing standards:** **AICP v2.1.1** and **UGDS v2.0.0** (2026-11-07). They support design-first, one-shot game/app delivery. Use the exact **Git commit SHA** when a project adopts them; a v2 release tag is not yet published. Existing projects pinned to v1 are **not migrated automatically**.
+These standards guide AI-assisted work on games and apps. The owner can explore an idea, authorize a build, inspect the result and request revisions in one conversation. The same assistant carries the work through implementation and verification. This workflow can be used across model generations.
 
-## How agents work
+## Starting from the owner's request
 
-**Design & Decide → Design Freeze → Build, Verify & Publish.**
+| What the owner brings | How to proceed |
+| --- | --- |
+| “I have an idea. What do you think?” | Explore the experience and tradeoffs. Wait for a build instruction. |
+| “Use this HTML as module 2 and keep module 1 playable.” | Inspect the supplied file and existing routes, integrate the module, then exercise both entry points. |
+| “The game opens with a blank canvas.” | Reproduce it at the reported route, repair the cause and verify a visible, interactive scene. |
+| “Freeze this design” or “hand this to another agent.” | Record the agreed design or prepare the requested transfer. Carry forward the exact scope and permissions. |
 
-1. ChatGPT explores all foreseeable consequential decisions with the owner **before** producing the first **FINAL GDD**. Resolve creative choices, exact rules, observable visual goals, technical boundaries, authorized fallback options, quality checks and deployment destinations. Do not demand an exhaustive questionnaire or ask the owner to choose routine technical details.
-2. At **one explicit Design Freeze**, preserve the agreed FINAL GDD **and automatically produce its companion, ready-to-run Codex brief**. Record separate exact authorization for implementation, merging, project release and any Possibility publication, along with visibility and cost bounds.
-3. Codex implements the complete frozen scope, owns intermediate experiments and rework, verifies actual behavior and visuals, safely checkpoints editable sources, and publishes **only** where specifically preauthorized. Interrupt the owner only for truly unresolvable consequential changes or access, safety, privacy, licensing and cost blockers. Never fabricate completion or human visual acceptance.
-4. The artifact's creator transfers the real original/editable source directly to the implementer through authorized durable repository paths when technically possible. The owner should not routinely act as a file courier. Project agents preserve relevant lessons locally; a portfolio-level standards integrator reconciles cross-project consequences before changing shared rules. Authorized, versioned maintenance may go directly to main when protections permit; do not create a PR just for ritual.
+## Which document to use
 
-## Governing documents and templates
+- [AI Collaboration & Continuity Protocol (AICP 3.0.0)](AI-COLLABORATION-PROTOCOL.md) defines who decides, how to iterate, when to ask and how to recover and release.
+- [Universal Game Development Standard (UGDS 2.1.0)](UGDS.md) defines game quality and verification. Apps can adopt relevant provisions.
+- [Conversation starter](templates/CONVERSATION-STARTER.md) gives an optional opening for new and existing projects.
+- [Design contract](templates/GDD-TEMPLATE.md) records a substantial agreed design when useful or requested.
+- [Handoff brief](templates/CODEX-BRIEF.md) transfers work when the person, session or environment changes.
+- [Project state](templates/PROJECT_STATE.md) indexes the last checkpoint when a project needs a recovery record.
+- [Capability registry](references/CAPABILITY-REGISTRY.md), [Diorama](references/DIORAMA-THREEJS.md), [Three.js skills](references/THREEJS-GAME-SKILLS.md) and [runtime identity](references/RUNTIME-IDENTITY-AND-CACHE.md) are optional engineering references.
 
-- [AICP v2.1.1](AI-COLLABORATION-PROTOCOL.md) — design freeze, AI autonomy, evidence/recovery, artifact custody, adaptive problem-solving, exception-only escalation, permission-bound release, and lean maintenance.
-- [UGDS v2.0.0](UGDS.md) — game functionality, inclusive inputs, proportionate testing, actual visual inspection and honest release proof.
-- [FINAL design/delivery contract](templates/GDD-TEMPLATE.md) — the one frozen specification and explicit release authorization.
-- [One-shot Codex instruction](templates/CODEX-BRIEF.md) — generated automatically with the FINAL GDD.
-- [Conversation starter](templates/CONVERSATION-STARTER.md) — opening instructions for a new design conversation.
-- [Minimal project-state index](templates/PROJECT_STATE.md) — optional recovery/status pointer, not a second specification.
+## Adoption
 
-## Optional technical references (not extra gates)
-
-- [Capability Registry](references/CAPABILITY-REGISTRY.md) — small, problem-indexed resource discovery map covering Three.js Game Skills, Diorama and PixelFX; review upstream instructions, risk, cost, fit and licensing before adopting.
-- [Diorama scene and animation playbook](references/DIORAMA-THREEJS.md) — optional procedural 3D scene, rigging, water and frame-level visual QA techniques.
-- [Three.js Game Skills](references/THREEJS-GAME-SKILLS.md) — agent skill selection and transferable real-time implementation/QA techniques.
-- [Runtime identity and cache verification](references/RUNTIME-IDENTITY-AND-CACHE.md) — troubleshooting source/build/ZIP/browser/deployment mismatches when actually relevant.
-
-References are advisory, may become stale, and never override the frozen project design or grant new permissions. Treat external scripts and instructions as untrusted until assessed.
-
-## Source of authority
-
-- The **approved project FINAL GDD** governs product intent and frozen delivery/permissions.
-- The **project's pinned standards commit** governs adopted reusable obligations; upgrades are intentional, not retroactive.
-- **Actual Git code and reproducible evidence** show what exists; don't infer deployment from a branch push, passing CI or a ZIP.
-- **No-cost default**; new spending, unsafe external services, changes to privacy/security or new publication destinations require explicit authorization.
-- **Possibility** (https://github.com/jaychtw/jaychtw.github.io) is a separate repository/release, though permission for it can be frozen alongside the game/app.
-
-Historical v1 decisions and past PRs remain available in Git history. The aim is to **preserve creative momentum and quality**, not to reward document quantity, ceremony or test counts.
+Pin the standards commit in the project when adopting this edition (2026-11-25). Existing pins continue to govern until the owner chooses to migrate. Preserve project-specific decisions and release permissions during migration. See the [changelog](CHANGELOG.md).
